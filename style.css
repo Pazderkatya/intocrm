@@ -186,9 +186,9 @@ section {
 }
 .hero .hero-wrapper .wrapper-title {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 .hero .hero-wrapper .first__row {
   padding: 30px 31px 0 20px;
@@ -220,6 +220,7 @@ section {
   align-items: center;
   gap: 10px;
   max-width: 393px;
+  margin-bottom: 23px;
 }
 
 .description__title {
