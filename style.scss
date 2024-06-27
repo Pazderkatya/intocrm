@@ -216,11 +216,13 @@ section {
         background-clip: text;
         margin-bottom: 23px;
         border-radius: 30px;
-        box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1);
-        box-shadow: -50px 4px 50px 0px rgba(255, 255, 255, 0.69) inset;
         backdrop-filter: blur(60px);
         &__foto {
             width: 100%;
+        }
+        .wrapper-title {
+            box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: -50px 4px 50px 0px rgba(255, 255, 255, 0.944) inset;
         }
         .first__row {
             padding: 30px 31px 0 20px;
@@ -238,24 +240,24 @@ section {
     max-width: 433px;
     max-height: 509px;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
     .fouder {
-        margin: 30px 25px 59px 12px;
         background: rgba(255, 255, 255, 0.69);
-        padding: 20px 18px 39px 20px;
         border-radius: 30px;
+        padding: 20px;
         &__foto {
             display: flex;
             align-items: center;
             gap: 10px;
             max-width: 393px;
-            margin-bottom: 23px;
         }
     }
 }
 
 .description {
-    display: flex;
-    flex-direction: column;
     &__title {
         max-width: 237px;
         font-size: 20px;
@@ -269,7 +271,6 @@ section {
 }
 
 .fouder-button button {
-    margin: 0 21px 19px;
     border-radius: 30px;
     background: $primary-color;
     color: white;
