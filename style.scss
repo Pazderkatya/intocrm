@@ -287,6 +287,16 @@ section {
     justify-content: space-between;
 }
 
+.test {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    .testleft {
+        height: 100px;
+        grid-column: span 5;
+        background-color: aqua;
+    }
+}
+
 .services {
     width: 100%;
     border-radius: 30px;
