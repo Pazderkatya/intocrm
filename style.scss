@@ -320,6 +320,21 @@ section {
     }
 }
 
+.form-button {
+    &__line {
+        border: 1px solid #959696;
+        border-radius: 30px;
+        background: $primary-color;
+        margin-right: 30px;
+    }
+    &__button {}
+}
+
+.foto-crm {
+    position: absolute;
+    top: 0;
+}
+
 .test {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
