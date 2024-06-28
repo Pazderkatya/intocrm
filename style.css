@@ -5,6 +5,13 @@
   font-weight: normal;
   font-style: normal;
 }
+main {
+  margin-top: 100px;
+}
+main.index {
+  margin-top: 0px;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -245,11 +252,37 @@ section {
   font-weight: 700;
 }
 
-.form-crm {
-  max-width: 1340px;
+.form-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  border-radius: 30px;
+}
+.form-container .form-wrapper {
+  padding: 50px 143px 106px;
+  width: 100%;
+  max-width: 1340px;
+}
+.form-container .form-wrapper__title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+.form-container .form-wrapper__description {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 27px;
+}
+.form-container .icons-crm {
+  display: flex;
+  flex-direction: row;
+}
+.form-container .icons-crm__paragraph {
+  font-size: 14px;
+  color: #fff;
 }
 
 .test {
