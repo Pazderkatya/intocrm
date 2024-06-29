@@ -252,48 +252,83 @@ section {
   font-weight: 700;
 }
 
-.form-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.form-crm {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   border-radius: 30px;
 }
-.form-container .form-wrapper {
-  padding: 50px 143px 106px;
+
+.small-container {
+  position: relative;
   width: 100%;
-  max-width: 1340px;
+  max-width: 1350px;
+  display: flex;
+  margin: 0 auto;
 }
-.form-container .form-wrapper__title {
+.small-container .wrapper-lesson {
+  max-width: 860px;
+  padding: 50px 46px 89px 106px;
+}
+.small-container .wrapper-lesson__title {
   color: #fff;
   font-weight: bold;
   font-size: 36px;
   text-align: left;
   margin-bottom: 50px;
 }
-.form-container .form-wrapper__description {
+.small-container .wrapper-lesson__description {
   font-size: 14px;
   color: #fff;
   margin-bottom: 27px;
 }
-.form-container .icons-crm {
+.small-container .icons-crm {
   display: flex;
   flex-direction: row;
 }
-.form-container .icons-crm__paragraph {
+.small-container .icons-crm__icon {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  border-radius: 50px;
+  line-height: 40px;
+}
+.small-container .icons-crm__circle {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 8px;
+  position: relative;
+}
+.small-container p {
   font-size: 14px;
   color: #fff;
+  margin-left: 11px;
 }
 
 .form-button__line {
+  padding: 10px;
   border: 1px solid #959696;
-  border-radius: 30px;
+  border-radius: 10px;
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   margin-right: 30px;
 }
+.form-button button {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000;
+  padding: 11px 30px;
+  border-radius: 30px;
+}
+.form-button button:hover {
+  color: #fff;
+  background-color: #959696;
+  transition: 1.5s, liner;
+}
+
 .foto-crm {
   position: absolute;
-  top: 0;
+  right: 5%;
+  top: -47%;
 }
 
 .test {

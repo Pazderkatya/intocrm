@@ -287,16 +287,20 @@ section {
     font-weight: 700;
 }
 
-.form-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.form-crm {
     background: $primary-color;
     border-radius: 30px;
-    .form-wrapper {
-        padding: 50px 143px 106px;
-        width: 100%;
-        max-width: 1340px;
+}
+
+.small-container {
+    position: relative;
+    width: 100%;
+    max-width: 1350px;
+    display: flex;
+    margin: 0 auto;
+    .wrapper-lesson {
+        max-width: 860px;
+        padding: 50px 46px 89px 106px;
         &__title {
             color: #fff;
             font-weight: bold;
@@ -313,26 +317,55 @@ section {
     .icons-crm {
         display: flex;
         flex-direction: row;
-        &__paragraph {
-            font-size: 14px;
-            color: #fff;
+        &__icon {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: $primary-color;
+            border-radius: 50px;
+            line-height: 40px;
         }
+        &__circle {
+            margin-bottom: 32px;
+            display: flex;
+            flex-direction: row;
+            margin-right: 8px;
+            position: relative;
+        }
+    }
+    p {
+        font-size: 14px;
+        color: #fff;
+        margin-left: 11px;
     }
 }
 
 .form-button {
     &__line {
+        padding: 10px;
         border: 1px solid #959696;
-        border-radius: 30px;
+        border-radius: 10px;
         background: $primary-color;
         margin-right: 30px;
     }
-    &__button {}
+    button {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #000;
+        padding: 11px 30px;
+        border-radius: 30px;
+    }
+    button:hover {
+        color: #fff;
+        background-color: #959696;
+        transition: 1.5s, liner;
+    }
 }
 
 .foto-crm {
     position: absolute;
-    top: 0;
+    right: +5%;
+    top: -47%;
 }
 
 .test {
