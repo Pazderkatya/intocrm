@@ -284,14 +284,6 @@ section {
   display: flex;
   flex-direction: row;
 }
-.small-container .icons-crm__icon {
-  content: "";
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
-  border-radius: 50px;
-  line-height: 40px;
-}
 .small-container .icons-crm__circle {
   margin-bottom: 32px;
   display: flex;
@@ -299,10 +291,20 @@ section {
   margin-right: 8px;
   position: relative;
 }
+.small-container .icons-crm__icon {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+}
 .small-container p {
   font-size: 14px;
   color: #fff;
   margin-left: 11px;
+  padding-top: 15px;
 }
 
 .form-button__line {
@@ -327,8 +329,8 @@ section {
 
 .foto-crm {
   position: absolute;
-  right: 5%;
-  top: -47%;
+  right: 3%;
+  top: -42%;
 }
 
 .test {

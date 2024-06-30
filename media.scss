@@ -1,0 +1,16 @@
+@media screen and (max-width: 375px) {
+    .hero-wrapper {
+        max-width: 375px;
+        max-height: 186px;
+    }
+    .fouder-button button {
+        border-radius: 30px;
+        background: $primary-color;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 70px;
+        padding: 30px 19px;
+        font-size: 32px;
+        font-weight: 700;
+    }
+}

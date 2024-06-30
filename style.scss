@@ -317,14 +317,6 @@ section {
     .icons-crm {
         display: flex;
         flex-direction: row;
-        &__icon {
-            content: "";
-            width: 40px;
-            height: 40px;
-            background: $primary-color;
-            border-radius: 50px;
-            line-height: 40px;
-        }
         &__circle {
             margin-bottom: 32px;
             display: flex;
@@ -332,11 +324,21 @@ section {
             margin-right: 8px;
             position: relative;
         }
+        &__icon {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: $primary-color;
+            border-radius: 50px;
+            line-height: 40px;
+            text-align: center;
+        }
     }
     p {
         font-size: 14px;
         color: #fff;
         margin-left: 11px;
+        padding-top: 15px;
     }
 }
 
@@ -364,8 +366,8 @@ section {
 
 .foto-crm {
     position: absolute;
-    right: +5%;
-    top: -47%;
+    right: +3%;
+    top: -42%;
 }
 
 .test {
