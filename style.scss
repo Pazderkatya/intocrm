@@ -66,9 +66,12 @@ main {
 }
 
 body {
+    /*
     background-image: url(assets/bg.jpg);
     background-size: 100% 100vh;
     background-attachment: fixed;
+    */
+    background: #fff;
     margin: 0;
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
@@ -348,6 +351,7 @@ section {
         border: 1px solid #959696;
         border-radius: 10px;
         background: $primary-color;
+        -webkit-text-fill-color: transparent;
         margin-right: 30px;
     }
     button {

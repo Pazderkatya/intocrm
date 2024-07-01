@@ -1,16 +1,18 @@
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 1236px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper-title {
+        max-width: 100%;
+    }
+    .fouder {
+        display: none;
+    }
     .hero-wrapper {
-        max-width: 375px;
-        max-height: 186px;
+        width: 80%;
     }
     .fouder-button button {
-        border-radius: 30px;
-        background: $primary-color;
-        color: white;
-        text-transform: uppercase;
-        border-radius: 70px;
-        padding: 30px 19px;
-        font-size: 32px;
-        font-weight: 700;
+        margin: 0 auto;
     }
 }
