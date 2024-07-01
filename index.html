@@ -227,32 +227,32 @@
                         </div>
                     </div>
                     <div class="other-information">
-                        <div class="services-all">
-                            <a class="reference-crm">
-                                <span class="reference-crm">01</span>
+                        <div class="services-all" style="grid-column: span 4;">
+                            <a class="reference">
+                                <div class="wrapper-numbers"><span>01</span></div>
                                 <h3 class="reference__title">CRM</h3>
-                                <p>Комплексное внедрение под ваш безнес, интеграция с внешними сервисами, обучение работников</p>
+                                <p class="reference__description">Комплексное внедрение под ваш безнес, интеграция с внешними сервисами, обучение работников</p>
                             </a>
                         </div>
                         <div class="services-all">
-                            <a class="reference-1c">
-                                <span class="reference-crm">02</span>
+                            <a class="reference">
+                                <div class="wrapper-numbers"><span>02</span></div>
                                 <h3 class="reference__title">1C</h3>
-                                <p>Комплексное внедрение под ваш безнес, интеграция с внешними </p>
+                                <p class="reference__description">Комплексное внедрение под ваш безнес, интеграция с внешними </p>
                             </a>
                         </div>
                         <div class="services-all">
-                            <a class="reference-sites">
-                                <span class="reference-crm">03</span>
+                            <a class="reference">
+                                <div class="wrapper-numbers"><span>03</span></div>
                                 <h3 class="reference__title">Cайты</h3>
-                                <p>Комплексное внедрение под ваш безнес, интеграция с внешними </p>
+                                <p class="reference__description">Комплексное внедрение под ваш безнес, интеграция с внешними </p>
                             </a>
                         </div>
-                        <div class="services-all">
-                            <a class="reference-widgets">
-                                <span class="reference-crm">04</span>
+                        <div class="services-all" style="grid-column: span 4;">
+                            <a class="reference">
+                                <div class="wrapper-numbers"><span>04</span></div>
                                 <h3 class="reference__title">Виджеты</h3>
-                                <p>Комплексное внедрение под ваш безнес, интеграция с внешними сервисами, обучение работников</p>
+                                <p class="reference__description">Комплексное внедрение под ваш безнес, интеграция с внешними сервисами, обучение работников</p>
                             </a>
                         </div>
                     </div>
@@ -792,22 +792,23 @@
                 </div>
             </section>
 
-            <section class="form">
-
-                <div class="hero_title">
-                    <h2 class="first_row">Остались вопросы?</h2>
-                </div>
-                <form action="">
-                    <div class="hero_text">
-                        <p>
+            <section class="form-questions">
+                <h2 class="questions-title">Остались вопросы?</h2>
+                <form class="contakts" action="">
+                    <div class="hero-text">
+                        <p class="hero-text__description">
                             Отправьте свои контактные данные и наш специалист свяжется с вами в ближайшее время
                         </p>
-                        <div class="form_input">
-                            <input type="text">
-                            <input type="text">
+                        <div class="form-input">
+                            <input type="text" name="name" id="name" placeholder="Введите ваше имя">
+                            <input type="phone" name="phone" id="phone" placeholder="Введите ваш номер телефона">
+                        </div>
+                        <div class="data-input">
+                            <input type="radio" name="data" id="data" value="data">
+                            <label for="data">cогласен на обработку персональных данных</label>
                         </div>
                     </div>
-                    <div class="hero_button">
+                    <div class="questions-button">
                         <button>все публикации</button>
                     </div>
                 </form>
