@@ -3,6 +3,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 100%;
+        width: 100%;
     }
     .wrapper-title {
         max-width: 100%;
@@ -10,17 +12,22 @@
     .fouder {
         display: none;
     }
-    .hero-wrapper {
-        width: 80%;
-    }
     .fouder-button {
         max-width: 900px;
     }
 }
 
-@media screen and (max-width: 1161px) {
-    .wrapper-title {
-        font-size: 26px;
-        max-width: 100%;
+@media screen and (max-width: 1200px) {
+    .foto-crm {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 681px) {
+    .form-bottom {
+        flex-direction: column;
+    }
+    &__line {
+        margin-bottom: 10px;
     }
 }
