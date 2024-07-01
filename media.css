@@ -40,16 +40,16 @@
   }
 }
 @media screen and (max-width: 650px) {
-  .small-container .wrapper-lesson {
+  .form-crm .small-container .wrapper-lesson {
     width: 100%;
     padding: 20px 30px;
   }
-  .small-container .wrapper-lesson__title {
+  .form-crm .small-container .wrapper-lesson__title {
     font-size: 25px;
     text-align: left;
     margin-bottom: 40px;
   }
-  .small-container .wrapper-lesson__description {
+  .form-crm .small-container .wrapper-lesson__description {
     font-size: 12px;
     margin-bottom: 25px;
   }
