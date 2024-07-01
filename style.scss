@@ -346,12 +346,12 @@ section {
 }
 
 .form-button {
+    background: transparent;
     &__line {
         padding: 10px;
         border: 1px solid #959696;
         border-radius: 10px;
         background: $primary-color;
-        -webkit-text-fill-color: transparent;
         margin-right: 30px;
     }
     button {

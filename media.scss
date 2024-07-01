@@ -2,6 +2,7 @@
     .hero {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
     .wrapper-title {
         max-width: 100%;
@@ -12,7 +13,14 @@
     .hero-wrapper {
         width: 80%;
     }
-    .fouder-button button {
-        margin: 0 auto;
+    .fouder-button {
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 1161px) {
+    .wrapper-title {
+        font-size: 26px;
+        max-width: 100%;
     }
 }
