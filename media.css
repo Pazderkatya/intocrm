@@ -23,6 +23,10 @@
 }
 @media screen and (max-width: 681px) {
   .form-bottom {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form-bottom__line {
     margin-bottom: 10px;
   }
 }/*# sourceMappingURL=media.css.map */

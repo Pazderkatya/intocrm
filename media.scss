@@ -26,8 +26,9 @@
 @media screen and (max-width: 681px) {
     .form-bottom {
         flex-direction: column;
-    }
-    &__line {
-        margin-bottom: 10px;
+        justify-content: space-between;
+        &__line {
+            margin-bottom: 10px;
+        }
     }
 }

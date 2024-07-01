@@ -309,12 +309,19 @@ section {
 
 .other-information {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr 2fr;
   row-gap: 20px;
   -moz-column-gap: 20px;
        column-gap: 20px;
-  grid-template-rows: 1fr 2fr;
   width: 50%;
+}
+.other-information .services-all .reference__title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1A2D43;
+}
+.other-information .services-all .reference p {
+  font-size: 14px;
 }
 
 .form-crm {
