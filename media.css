@@ -16,7 +16,6 @@
     max-width: 900px;
   }
   .form-questions {
-    width: 100%;
     background-image: none;
   }
 }
@@ -40,16 +39,16 @@
   }
 }
 @media screen and (max-width: 650px) {
-  .form-crm .small-container .wrapper-lesson {
+  .small-container .wrapper-lesson {
     width: 100%;
     padding: 20px 30px;
   }
-  .form-crm .small-container .wrapper-lesson__title {
+  .small-container .wrapper-lesson__title {
     font-size: 25px;
     text-align: left;
     margin-bottom: 40px;
   }
-  .form-crm .small-container .wrapper-lesson__description {
+  .small-container .wrapper-lesson__description {
     font-size: 12px;
     margin-bottom: 25px;
   }

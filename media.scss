@@ -16,7 +16,6 @@
             max-width: 900px;
         }
         .form-questions {
-            width: 100%;
             background-image: none;
         }
     }
@@ -26,6 +25,8 @@
             display: none;
         }
     }
+    
+    @media screen and (max-width: 785px) {}
     
     @media screen and (max-width: 681px) {
         .small-container .wrapper-lesson {
@@ -43,7 +44,7 @@
     }
     
     @media screen and (max-width: 650px) {
-        .form-crm .small-container .wrapper-lesson {
+        .small-container .wrapper-lesson {
             width: 100%;
             padding: 20px 30px;
             &__title {

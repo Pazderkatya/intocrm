@@ -254,6 +254,8 @@ section {
 }
 
 .big-wrapper {
+  max-width: 1113px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
@@ -320,23 +322,35 @@ section {
 .other-information .services-all {
   grid-column: span 3;
   border-radius: 20px;
+  background: #C4C4C4;
+  padding: 30px 20px;
 }
-.other-information .services-all .reference__title {
+.other-information .reference {
+  position: relative;
+}
+.other-information .reference__title {
   font-size: 40px;
   font-weight: bold;
   color: #1A2D43;
   line-height: 1.7;
 }
-.other-information .services-all .reference__description {
+.other-information .reference__description {
   font-size: 14px;
   margin-bottom: 20px;
 }
-.other-information .services-all .reference .wrapper-numbers {
+.other-information .reference img {
+  position: absolute;
+  width: 100%;
+  bottom: -40%;
+  right: -7%;
+  mix-blend-mode: color-dodge;
+}
+.other-information .reference .wrapper-numbers {
   display: inline-block;
   width: 100%;
   text-align: right;
 }
-.other-information .services-all .reference .wrapper-numbers span {
+.other-information .reference .wrapper-numbers span {
   font-size: 12px;
   color: #C4C4C4;
   padding: 3px 7px;
@@ -975,8 +989,6 @@ footer {
   background-image: url(assets/Alex.png);
   background-repeat: no-repeat;
   background-position: right;
-  padding: 40px 134px 63px 40px;
-  margin-bottom: 80px;
 }
 .form-questions .contakts {
   width: 35%;
@@ -990,6 +1002,11 @@ footer {
   background-clip: text;
   font-family: "bion-bold";
   margin-bottom: 30px;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+.form-questions .questions-button {
+  padding-bottom: 20px;
 }
 .form-questions .questions-button button {
   padding: 12px 60px;
@@ -1000,7 +1017,10 @@ footer {
   font-size: 16px;
   border: none;
   margin-top: 30px;
-  margin-left: 50px;
+  margin-left: 60px;
+}
+.form-questions .hero-text {
+  padding-left: 30px;
 }
 .form-questions .hero-text .form-input {
   margin-top: 30px;
@@ -1021,4 +1041,117 @@ footer {
 }
 .form-questions .hero-text .data-input input {
   margin-right: 10px;
+}
+
+.blog h2 {
+  /* Приобретайте лицензии для вашего бизнеса на выгодных условиях */
+  width: 826px;
+  height: 92px;
+  margin-bottom: 16px;
+  font-family: "bion-bold";
+  font-style: bold;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  /* обрезаем фон по тексту */
+  -webkit-background-clip: text;
+  /* меняет цвет текста заголовка на прозрачный что бы можно было увидеть градиент*/
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(87.66deg, #192738 -6.83%, #24588e 90.56%);
+}
+
+.card {
+  width: 100%;
+  height: 237px;
+  filter: drop-shadow(0px 4px 64px #C9D9D9);
+}
+.card__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1113px;
+}
+.card__image {
+  width: 100%;
+  height: 175px;
+  display: flex;
+  margin-bottom: 2px;
+  background-size: cover;
+  justify-content: flex-end;
+  align-items: flex-start;
+  border-radius: 20px 20px 20px 0px;
+}
+.card__icon {
+  background-image: url(assets/ikon-base.png);
+  width: 29px;
+  height: 24px;
+  background-image: none;
+  margin-inline: 4px;
+  border: 1px solid #C4C4C4;
+  border-radius: 13px;
+  background: linear-gradient(130.29deg, rgba(255, 255, 255, 0.1) 8.67%, rgba(255, 255, 255, 0.8) 35.79%, rgba(255, 255, 255, 0.5) 55.39%, #ffffff 78.82%);
+  box-shadow: inset -50px 4px 50px rgba(255, 255, 255, 0.69);
+  margin-block: 10px;
+}
+.card__title {
+  width: 100%;
+  height: 61px;
+  display: flex;
+  box-sizing: border-box;
+  background: linear-gradient(130.29deg, rgba(255, 255, 255, 0.1) 8.67%, rgba(255, 255, 255, 0.8) 35.79%, rgba(255, 255, 255, 0.5) 55.39%, #ffffff 78.82%);
+  box-shadow: inset -50px 4px 50px rgba(255, 255, 255, 0.69);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  border-radius: 0px 20px 20px 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+.card__name {
+  font-size: 20px;
+  font-family: "Bion";
+  font-style: normal;
+  font-weight: 700;
+  /* width: 89%; */
+  padding-right: 8px;
+  /* padding-left: 10px; */
+  color: #373A3E;
+}
+.card__subtext {
+  font-size: 14px;
+  font-family: "Bion";
+  font-style: normal;
+  font-weight: 700;
+  height: 24px;
+  background: linear-gradient(130.29deg, rgba(255, 255, 255, 0.1) 8.67%, rgba(255, 255, 255, 0.8) 35.79%, rgba(255, 255, 255, 0.5) 55.39%, #ffffff 78.82%);
+  box-shadow: inset -50px 4px 50px rgba(255, 255, 255, 0.69);
+  line-height: 1.7;
+  border-radius: 14px;
+  border: 1px solid #C4C4C4;
+  margin-block: 11px;
+  margin-right: 10px;
+  padding-inline: 8px;
+  color: #C4C4C4;
+}
+.card__arrow {
+  width: 50px;
+  height: 50px;
+  background: white;
+  /* padding-top: 12px; */
+  background-position: center;
+  border-radius: 50%;
+  display: grid;
+  left: 12;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 17.4px rgba(217, 217, 217, 0.25);
+  justify-items: center;
+  align-items: center;
+}
+.card__link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
