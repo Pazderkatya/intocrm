@@ -12,6 +12,16 @@ main.index {
   margin-top: 0px;
 }
 
+h2 {
+  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 36px;
+  font-family: "bion-bold";
+  margin-bottom: 20px;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -256,25 +266,47 @@ section {
 .big-wrapper {
   max-width: 1113px;
   margin: 0 auto;
+}
+
+.gray {
+  background: #ebebeb;
+  border-radius: 30px;
+  padding: 48px 0;
+}
+.gray section {
+  margin-bottom: 100px;
+}
+.gray h2 {
+  text-align: center;
+  max-width: 826px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 38px;
+}
+
+.services .big-wrapper {
+  max-width: 1113px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 20px;
 }
-.big-wrapper .basic-information {
+.services .big-wrapper .basic-information {
   grid-column: span 5;
 }
-.big-wrapper .logo-text {
+.services .big-wrapper .logo-text {
   gap: 10px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 32px;
+  margin-bottom: 36px;
 }
-.big-wrapper .logo-text__icons {
+.services .big-wrapper .logo-text__icons {
   border-radius: 50px;
   border: 1px solid #C4C4C4;
   padding: 4px 10px;
 }
-.big-wrapper .logo-text p {
+.services .big-wrapper .logo-text p {
   font-size: 20px;
   border: 1px solid #C4C4C4;
   border-radius: 50px;
@@ -282,24 +314,25 @@ section {
   padding: 4px 20px;
   color: #A6A6A6;
 }
-.big-wrapper .specification {
+.services .big-wrapper .specification {
   justify-content: space-between;
 }
-.big-wrapper .specification__title {
+.services .big-wrapper .specification__title {
+  /*
   font-weight: 700;
   font-size: 32px;
-  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
-  -webkit-background-clip: text;
-          background-clip: text;
+  background: $primary-color;
+  background-clip: text;
   color: transparent;
   text-align: left;
   margin-bottom: 20px;
+  */
 }
-.big-wrapper .specification__paragraph {
+.services .big-wrapper .specification__paragraph {
   font-size: 16px;
   margin-bottom: 36px;
 }
-.big-wrapper .specification button {
+.services .big-wrapper .specification button {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   color: white;
   text-transform: uppercase;
@@ -322,8 +355,13 @@ section {
 .other-information .services-all {
   grid-column: span 3;
   border-radius: 20px;
-  background: #C4C4C4;
-  padding: 30px 20px;
+  background: #ebebeb;
+  padding: 20px;
+  max-height: 156px;
+}
+.other-information .services-all:first-child,
+.other-information .services-all:last-child {
+  grid-column: span 4;
 }
 .other-information .reference {
   position: relative;
@@ -336,31 +374,34 @@ section {
 }
 .other-information .reference__description {
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .other-information .reference img {
   position: absolute;
   width: 100%;
-  bottom: -40%;
+  bottom: -11%;
   right: -7%;
   mix-blend-mode: color-dodge;
 }
-.other-information .reference .wrapper-numbers {
+
+.wrapper-numbers {
   display: inline-block;
   width: 100%;
   text-align: right;
 }
-.other-information .reference .wrapper-numbers span {
+.wrapper-numbers span {
   font-size: 12px;
   color: #C4C4C4;
   padding: 3px 7px;
   border: 1px solid #C4C4C4;
   border-radius: 10px;
+  background: #fff;
 }
 
 .form-crm {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   border-radius: 30px;
+  margin-top: -30px;
 }
 .form-crm .small-container {
   position: relative;
@@ -434,7 +475,38 @@ section {
 .form-crm .small-container .foto-crm {
   position: absolute;
   right: 3%;
-  top: -42%;
+  bottom: 0;
+}
+
+.work-stages__wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  grid-row: span 12;
+}
+.work-stages__wrapper .description {
+  font-family: "Raleway";
+  grid-column: span 3;
+  border-radius: 20px;
+  border: 1px solid #c4c4c4;
+  background: #ebebeb;
+  padding: 10px 11px 27px;
+  max-height: 173px;
+}
+.work-stages__wrapper .description__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 22px;
+}
+.work-stages__wrapper .description__description {
+  font-size: 16px;
+}
+.work-stages__wrapper .description:nth-last-child(-n+3) {
+  grid-column: span 4;
 }
 
 .servicess {
@@ -562,12 +634,13 @@ section {
 
 .benefit {
   width: 100%;
+  /*
   border-radius: 30px;
   box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1), inset -50px 4px 50px 0px rgba(255, 255, 255, 0.69);
-  -webkit-backdrop-filter: blur(60px);
-          backdrop-filter: blur(60px);
+  backdrop-filter: blur(60px);
   background: rgba(255, 255, 255, 0.8);
   padding: 50px 110px 75px 110px;
+  */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -900,26 +973,6 @@ footer {
   border-radius: 25px;
 }
 
-.case {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.case .image {
-  height: 100px;
-}
-.case .under_section {
-  padding: 9px 10px 9px 10px;
-}
-.case .under_section button {
-  width: 30px;
-  height: 30px;
-}
-.case .slider_block {
-  width: 100%;
-}
-
 .faq_header {
   font-size: 36px;
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
@@ -1005,9 +1058,6 @@ footer {
   padding-top: 40px;
   padding-left: 30px;
 }
-.form-questions .questions-button {
-  padding-bottom: 20px;
-}
 .form-questions .questions-button button {
   padding: 12px 60px;
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
@@ -1065,6 +1115,8 @@ footer {
   width: 100%;
   height: 237px;
   filter: drop-shadow(0px 4px 64px #C9D9D9);
+  background: none;
+  border: none;
 }
 .card__wrapper {
   display: grid;
@@ -1154,4 +1206,11 @@ footer {
   height: 100%;
   top: 0;
   cursor: pointer;
+}
+
+.review img {
+  max-width: 100%;
+}
+.review h2 {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
