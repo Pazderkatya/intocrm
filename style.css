@@ -257,9 +257,9 @@ section {
   color: white;
   text-transform: uppercase;
   border-radius: 70px;
-  padding: 30px 19px;
-  font-size: 32px;
-  font-weight: 700;
+  padding: 25px 19px;
+  font-size: 29px;
+  font-weight: 600;
   border: none;
 }
 
@@ -331,6 +331,7 @@ section {
 .services .big-wrapper .specification__paragraph {
   font-size: 16px;
   margin-bottom: 36px;
+  font-family: "Raleway";
 }
 .services .big-wrapper .specification button {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
@@ -356,8 +357,9 @@ section {
   grid-column: span 3;
   border-radius: 20px;
   background: linear-gradient(116.9deg, rgba(243, 248, 247, 0.65) 16.43%, rgba(234, 234, 241, 0.66) 98.81%), radial-gradient(60.81% 93.32% at 87% 0%, rgba(233, 227, 214, 0.345) 0%, rgba(229, 239, 247, 0) 100%);
-  padding: 20px;
-  max-height: 156px;
+  padding-left: 25px;
+  padding-right: 12px;
+  padding-top: 10px;
 }
 .other-information .services-all:first-child,
 .other-information .services-all:last-child {
@@ -374,7 +376,7 @@ section {
 }
 .other-information .reference__description {
   font-size: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .other-information .reference img {
   position: absolute;
@@ -491,8 +493,8 @@ section {
   font-family: "Raleway";
   grid-column: span 3;
   border-radius: 20px;
-  border: 1px solid #c4c4c4;
-  background: #ebebeb;
+  background: linear-gradient(130.29deg, rgba(255, 255, 255, 0.1) 8.67%, rgba(255, 255, 255, 0.8) 35.79%, rgba(255, 255, 255, 0.5) 55.39%, #ffffff 78.82%);
+  box-shadow: inset -50px 4px 50px rgba(255, 255, 255, 0.69);
   padding: 10px 11px 27px;
   max-height: 173px;
 }
@@ -507,26 +509,6 @@ section {
 }
 .work-stages__wrapper .description:nth-last-child(-n+3) {
   grid-column: span 4;
-}
-
-.servicess {
-  width: 100%;
-  border-radius: 30px;
-  box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1), inset -50px 4px 50px 0px rgba(255, 255, 255, 0.69);
-  -webkit-backdrop-filter: blur(60px);
-          backdrop-filter: blur(60px);
-  background: rgba(255, 255, 255, 0.8);
-  padding: 30px 110px 75px 110px;
-}
-.servicess__title {
-  text-align: center;
-  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  font-size: 35px;
-  font-family: "bion-bold";
-  margin-bottom: 20px;
 }
 
 .serv_grid {
@@ -831,6 +813,23 @@ footer {
 .paralax svg {
   position: absolute;
   margin: 0 auto;
+  margin-top: 136px;
+}
+
+.case .blog_header {
+  text-align: center;
+}
+.case__description {
+  max-width: 830px;
+  width: 100%;
+  text-align: center;
+  font-family: "Raleway";
+  font-size: 22px;
+  margin: 0 auto;
+}
+.case .card-container {
+  display: flex;
+  flex-direction: row;
 }
 
 .license {
