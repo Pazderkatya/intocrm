@@ -816,7 +816,7 @@ footer {
   margin-top: 136px;
 }
 
-.case .blog_header {
+.case .blog__header {
   text-align: center;
 }
 .case__description {
@@ -826,10 +826,17 @@ footer {
   font-family: "Raleway";
   font-size: 22px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
-.case .card-container {
-  display: flex;
-  flex-direction: row;
+.case .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+.case .card-wrapper .card__image {
+  height: 210px;
 }
 
 .license {
@@ -902,7 +909,7 @@ footer {
   align-items: center;
   flex-direction: column;
 }
-.blog_header {
+.blog__header {
   font-size: 36px;
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   -webkit-background-clip: text;
@@ -911,30 +918,24 @@ footer {
   font-family: "bion-bold";
   margin-bottom: 50px;
 }
-.blog_slider_block {
-  width: 100%;
-}
-.blog_button {
+.blog__button {
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-bottom: 20px;
 }
-.blog .swiper-wrapper {
-  gap: 20px;
-}
-.blog .button_block {
+.blog .button-block {
   display: flex;
   gap: 20px;
 }
-.blog .button_block button {
+.blog .button-block button {
   border-radius: 18px;
   border: rgb(149, 150, 150) solid 3px;
   background: none;
   padding: 8px 64px;
   font-size: 20px;
 }
-.blog .button_block_gradient button {
+.blog .button-block_gradient button {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   color: white;
   padding: 8px 64px;
@@ -942,34 +943,12 @@ footer {
   border-radius: 18px;
   border: none;
 }
-
-.slider_block {
-  box-shadow: inset -50px 4px 50px 0px rgba(255, 255, 255, 0.69);
-  -webkit-backdrop-filter: blur(100px);
-          backdrop-filter: blur(100px);
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-}
-.slider_block .image {
-  background: rgb(204, 203, 203);
-  border-radius: 20px;
-  height: 210px;
-}
-.slider_block .under_section {
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-  font-family: "bion-bold";
-  padding: 25px 10px 18px 10px;
-  align-items: center;
-}
-.slider_block .under_section button {
-  box-shadow: 0px 4px 17.4px 0px rgba(217, 217, 217, 0.25);
-  border: none;
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 25px;
+.blog .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .faq_header {
