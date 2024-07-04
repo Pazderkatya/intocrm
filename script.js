@@ -1,5 +1,3 @@
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.clearScrollMemory('manual')
@@ -80,12 +78,7 @@ gsap.to(".license_card .second_row", {
     },
 });
 
-
-const swiper = new Swiper('.blog>.swiper', {
-    slidesPerView: 3.3,
+const swiper = new Swiper('.swiper', {
+    speed: 400,
+    spaceBetween: 100,
 });
-const swiper2 = new Swiper('.case>.swiper', {
-    slidesPerView: 6.3,
-    spaceBetween: 20,
-});
-
