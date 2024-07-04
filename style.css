@@ -1242,4 +1242,18 @@ footer {
 }
 .review h2 {
   text-align: center;
+}
+.review .review-inner {
+  /* добавляю position и все ломается
+  position: absolute; */
+}
+.review .review-inner .form-review {
+  position: relative;
+  right: 0;
+  max-width: 735px;
+  border-radius: 30px;
+}
+.review .review-inner .form-review .company {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
