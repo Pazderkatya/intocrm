@@ -381,7 +381,7 @@ section {
 .other-information .reference img {
   position: absolute;
   width: 100%;
-  bottom: -17%;
+  bottom: -16%;
   right: -7%;
   mix-blend-mode: color-dodge;
 }
@@ -875,7 +875,7 @@ footer {
   max-width: 100%;
 }
 .case .card-wrapper .card__image {
-  height: 210px;
+  height: 120px;
 }
 
 .license {
@@ -1140,13 +1140,12 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   width: 100%;
-  max-width: 1113px;
 }
 .card__image {
   width: 100%;
   height: 175px;
   display: flex;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
   background-size: cover;
   justify-content: flex-end;
   align-items: flex-start;
@@ -1160,9 +1159,21 @@ footer {
   margin-inline: 4px;
   border: 1px solid #C4C4C4;
   border-radius: 13px;
-  background: linear-gradient(130.29deg, rgba(255, 255, 255, 0.1) 8.67%, rgba(255, 255, 255, 0.8) 35.79%, rgba(255, 255, 255, 0.5) 55.39%, #ffffff 78.82%);
+  background: rgba(255, 255, 255, 0.4);
+  /*background: linear-gradient(130.29deg, rgba(255, 255, 255, 0.1) 8.67%, rgba(255, 255, 255, 0.8) 35.79%, rgba(255, 255, 255, 0.5) 55.39%, #ffffff 78.82%);*/
   box-shadow: inset -50px 4px 50px rgba(255, 255, 255, 0.69);
   margin-block: 10px;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+.card__icon img {
+  width: 77%;
+  height: 87%;
+  margin-block: 1px;
+  display: grid;
+  margin-inline: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 .card__title {
   width: 100%;
@@ -1174,8 +1185,9 @@ footer {
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
   border-radius: 0px 20px 20px 20px;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }
 .card__name {
   font-size: 20px;
@@ -1201,7 +1213,7 @@ footer {
   margin-block: 11px;
   margin-right: 10px;
   padding-inline: 8px;
-  color: #C4C4C4;
+  color: #8E8E8E;
 }
 .card__arrow {
   width: 50px;
