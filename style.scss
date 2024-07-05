@@ -408,6 +408,8 @@ section {
         &__description {
             font-size: 14px;
             margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
         }
         img {
             position: absolute;
@@ -415,6 +417,7 @@ section {
             bottom: -16%;
             right: -7%;
             mix-blend-mode: color-dodge;
+            z-index: 1;
         }
     }
 }
@@ -664,7 +667,8 @@ section {
             position: absolute;
             top: 130px;
             left: 30px;
-            background: linear-gradient(130.29deg, rgba(255, 255, 255, 0.1) 8.67%, rgba(255, 255, 255, 0.8) 35.79%, rgba(255, 255, 255, 0.5) 55.39%, #ffffff 78.82%);
+            background: #ffffff75;
+            backdrop-filter: blur(60px);
             box-shadow: inset -50px 4px 50px rgba(255, 255, 255, 0.69);
             border-radius: 30px;
             height: calc(100% - 260px);
@@ -674,12 +678,10 @@ section {
                 font-size: 42px;
                 line-height: 46px;
                 margin-bottom: 30px;
-                font-family: "Bebas Neue Cyrillic", sans-serif !important;
             }
             &__text {
                 margin-top: 20px;
                 margin-bottom: 10px;
-                font-family: "Bebas Neue Cyrillic";
             }
             p {
                 a {
@@ -1302,9 +1304,12 @@ footer {
             max-height: 385px;
             border-radius: 30px;
             padding: 40px;
+            position: absolute;
+            right: 0;
             .swiper-slider {
                 /*background: rgba(255, 255, 255, 0.69);*/
-                background: #8d9195;
+                background: #ffffff75;
+                backdrop-filter: blur(60px);
                 border-radius: 30px;
                 padding: 20px;
                 .company {
