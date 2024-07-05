@@ -682,6 +682,7 @@ section {
             &__text {
                 margin-top: 20px;
                 margin-bottom: 10px;
+                font-weight: 600;
             }
             p {
                 a {
@@ -1291,7 +1292,6 @@ footer {
 }
 
 .review {
-    /*position: absolute;    когда выставляю, все ломается*/
     & img {
         max-width: 100%;
     }

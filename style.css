@@ -650,6 +650,7 @@ section {
 .container-map .map .map-inner__text {
   margin-top: 20px;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 .container-map .map .map-inner p a {
   text-decoration: none;
@@ -1240,9 +1241,6 @@ footer {
   cursor: pointer;
 }
 
-.review {
-  /*position: absolute;    когда выставляю, все ломается*/
-}
 .review img {
   max-width: 100%;
 }
