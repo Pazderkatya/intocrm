@@ -711,13 +711,18 @@ section {
         background: linear-gradient(116.9deg, rgba(243, 248, 247, 0.65) 16.43%, rgba(234, 234, 241, 0.66) 98.81%), radial-gradient(60.81% 93.32% at 87% 0%, rgba(233, 227, 214, 0.345) 0%, rgba(229, 239, 247, 0) 100%);
         &__blue {
             border-radius: 30px;
-            background: $primary-color;
+            background: linear-gradient(57.53deg, rgb(24, 39, 58), rgb(172, 195, 235));
             padding: 20px;
             .title-left-form {
                 gap: 10px;
                 display: flex;
                 flex-direction: row;
                 margin-bottom: 36px;
+                div {
+                    border-radius: 50px;
+                    border: 1px solid #C4C4C4;
+                    padding: 4px 10px;
+                }
                 p {
                     font-size: 20px;
                     border: 1px solid #C4C4C4;
@@ -761,7 +766,9 @@ section {
             margin-bottom: 15px;
         }
         input {
-            border-radius: 20px;
+            border: 1px solid rgb(149, 150, 150);
+            height: 40px;
+            border-radius: 10px;
             margin-bottom: 15px;
         }
     }

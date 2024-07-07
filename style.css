@@ -676,7 +676,7 @@ section {
 }
 .form-bottom .form-left__blue {
   border-radius: 30px;
-  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  background: linear-gradient(57.53deg, rgb(24, 39, 58), rgb(172, 195, 235));
   padding: 20px;
 }
 .form-bottom .form-left__blue .title-left-form {
@@ -684,6 +684,11 @@ section {
   display: flex;
   flex-direction: row;
   margin-bottom: 36px;
+}
+.form-bottom .form-left__blue .title-left-form div {
+  border-radius: 50px;
+  border: 1px solid #C4C4C4;
+  padding: 4px 10px;
 }
 .form-bottom .form-left__blue .title-left-form p {
   font-size: 20px;
@@ -726,7 +731,9 @@ section {
   margin-bottom: 15px;
 }
 .form-bottom .form-right input {
-  border-radius: 20px;
+  border: 1px solid rgb(149, 150, 150);
+  height: 40px;
+  border-radius: 10px;
   margin-bottom: 15px;
 }
 
