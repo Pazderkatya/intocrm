@@ -24,10 +24,24 @@
     display: none;
   }
 }
-@media screen and (max-width: 681px) {
-  .small-container .wrapper-lesson {
+@media screen and (max-width: 1105px) {
+  .big-wrapper .other-information .services-all .reference img {
+    display: none;
+  }
+}
+@media screen and (max-width: 785px) {
+  .big-wrapper .other-information .services-all .reference__title {
     width: 100%;
-    padding: 40px;
+    font-size: 28px;
+  }
+  .big-wrapper .other-information .services-all .reference img {
+    display: none;
+  }
+}
+@media screen and (max-width: 681px) {
+  .form-crm .small-container .wrapper-lesson {
+    width: 100%;
+    padding: 30px;
   }
   .form-button {
     display: flex;
@@ -37,11 +51,15 @@
   .form-button__line {
     margin-bottom: 10px;
   }
+  .big-wrapper .other-information .services-all .reference__title {
+    width: 100%;
+    font-size: 28px;
+  }
 }
 @media screen and (max-width: 650px) {
   .small-container .wrapper-lesson {
     width: 100%;
-    padding: 20px 30px;
+    padding: 15px 25px;
   }
   .small-container .wrapper-lesson__title {
     font-size: 25px;
@@ -62,10 +80,8 @@
     display: flex;
     flex-direction: column;
   }
-  .other-information .services-all .reference__title {
-    font-size: 32px;
-  }
-  .other-information .services-all .reference__description {
-    font-size: 12px;
+  .big-wrapper .other-information .services-all {
+    padding-left: 15px;
+    padding-right: 8px;
   }
 }/*# sourceMappingURL=media.css.map */

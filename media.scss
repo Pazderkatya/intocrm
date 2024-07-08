@@ -26,12 +26,30 @@
         }
     }
     
-    @media screen and (max-width: 785px) {}
+    @media screen and (max-width: 1105px) {
+        .big-wrapper .other-information .services-all .reference {
+            img {
+                display: none;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 785px) {
+        .big-wrapper .other-information .services-all .reference {
+            &__title {
+                width: 100%;
+                font-size: 28px;
+            }
+            img {
+                display: none;
+            }
+        }
+    }
     
     @media screen and (max-width: 681px) {
-        .small-container .wrapper-lesson {
+        .form-crm .small-container .wrapper-lesson {
             width: 100%;
-            padding: 40px;
+            padding: 30px;
         }
         .form-button {
             display: flex;
@@ -41,12 +59,18 @@
                 margin-bottom: 10px;
             }
         }
+        .big-wrapper .other-information .services-all .reference {
+            &__title {
+                width: 100%;
+                font-size: 28px;
+            }
+        }
     }
     
     @media screen and (max-width: 650px) {
         .small-container .wrapper-lesson {
             width: 100%;
-            padding: 20px 30px;
+            padding: 15px 25px;
             &__title {
                 font-size: 25px;
                 text-align: left;
@@ -68,12 +92,8 @@
             display: flex;
             flex-direction: column;
         }
-        .other-information .services-all .reference {
-            &__title {
-                font-size: 32px;
-            }
-            &__description {
-                font-size: 12px;
-            }
+        .big-wrapper .other-information .services-all {
+            padding-left: 15px;
+            padding-right: 8px;
         }
     }
