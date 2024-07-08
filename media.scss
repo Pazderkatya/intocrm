@@ -26,10 +26,44 @@
         }
     }
     
+    @media screen and (max-width: 1045px) {
+        .work-stages {
+            h2 {
+                font-size: 28px;
+            }
+            &__wrapper {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                .description {
+                    &__title {
+                        font-size: 16px;
+                    }
+                    &__paragraph {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    
     @media screen and (max-width: 1105px) {
         .big-wrapper .other-information .services-all .reference {
             img {
                 display: none;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 850px) {
+        .big-wrapper {
+            .basic-information {
+                .specification {
+                    &__title {
+                        font-size: 26px;
+                    }
+                }
             }
         }
     }
@@ -44,6 +78,10 @@
                 display: none;
             }
         }
+        .other-information {
+            display: flex;
+            flex-direction: column;
+        }
     }
     
     @media screen and (max-width: 681px) {
@@ -57,12 +95,6 @@
             gap: 20px;
             &__line {
                 margin-bottom: 10px;
-            }
-        }
-        .big-wrapper .other-information .services-all .reference {
-            &__title {
-                width: 100%;
-                font-size: 28px;
             }
         }
     }
@@ -91,9 +123,5 @@
         .small-container .wrapper-lesson .icons-crm {
             display: flex;
             flex-direction: column;
-        }
-        .big-wrapper .other-information .services-all {
-            padding-left: 15px;
-            padding-right: 8px;
         }
     }
