@@ -40,6 +40,9 @@
   .work-stages__wrapper .description__paragraph {
     font-size: 12px;
   }
+  .work-stages__wrapper .description .wrapper-numbers span {
+    padding: 5px;
+  }
 }
 @media screen and (max-width: 1105px) {
   .big-wrapper .other-information .services-all .reference img {
@@ -49,6 +52,13 @@
 @media screen and (max-width: 850px) {
   .big-wrapper .basic-information .specification__title {
     font-size: 26px;
+  }
+  .big-wrapper .basic-information .logo-text p {
+    font-size: 18px;
+    padding: 4px 18px;
+  }
+  .big-wrapper .basic-information .logo-text__icons {
+    padding: 5px;
   }
 }
 @media screen and (max-width: 785px) {
@@ -60,6 +70,13 @@
     display: none;
   }
   .other-information {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-map .map .map-inner h2 {
+    font-size: 30px;
+  }
+  .container-map .map .map-inner div {
     display: flex;
     flex-direction: column;
   }
@@ -107,6 +124,18 @@
   .services .big-wrapper .specification button {
     font-size: 12px;
     padding: 10px 35px;
+  }
+}
+@media screen and (max-width: 585px) {
+  .basic-information .specification__title {
+    font-size: 26px;
+  }
+  .basic-information .logo-text p {
+    font-size: 18px;
+    padding: 4px 18px;
+  }
+  .basic-information .logo-text__icons {
+    padding: 6px;
   }
 }
 @media screen and (max-width: 400px) {

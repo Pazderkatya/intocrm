@@ -186,7 +186,9 @@ section {
             // margin-left: 38px;
             button {
                 border-radius: 20px;
-                background: $primary-color;
+                background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
+                border: 1px solid #E5BD81;
+                box-shadow: 0px 16px 50px -16px #E5AE5C99;
                 color: white;
                 text-transform: uppercase;
                 border: none;
@@ -285,7 +287,9 @@ section {
         }
         .fouder-button button {
             border-radius: 30px;
-            background: $primary-color;
+            background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
+            border: 1px solid #E5BD81;
+            box-shadow: 0px 16px 50px -16px #E5AE5C99;
             color: white;
             text-transform: uppercase;
             border-radius: 70px;
@@ -366,7 +370,9 @@ section {
             font-family: 'Raleway';
         }
         button {
-            background: $primary-color;
+            background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
+            border: 1px solid #E5BD81;
+            box-shadow: 0px 16px 50px -16px #E5AE5C99;
             color: white;
             text-transform: uppercase;
             border-radius: 70px;
@@ -499,7 +505,9 @@ section {
             button {
                 font-size: 16px;
                 text-transform: uppercase;
-                color: #000;
+                background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
+                border: 1px solid #E5BD81;
+                box-shadow: 0px 16px 50px -16px #E5AE5C99;
                 padding: 11px 30px;
                 border-radius: 30px;
                 border: none;
@@ -797,7 +805,9 @@ section {
     &_button {
         button {
             border-radius: 30px;
-            background: $primary-color;
+            background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
+            border: 1px solid #E5BD81;
+            box-shadow: 0px 16px 50px -16px #E5AE5C99;
             color: white;
             text-transform: uppercase;
             border: none;
@@ -1170,69 +1180,6 @@ footer {
 
 .accordion-button:not(.collapsed)::afte {
     transform: rotate(180deg);
-}
-
-.form-questions {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-    box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1), inset -50px 4px 50px 0px rgba(255, 255, 255, 0.69);
-    backdrop-filter: blur(60px);
-    background: $bg-color-light;
-    background-image: url(assets/Alex.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    .contakts {
-        width: 35%;
-    }
-    .questions-title {
-        font-family: 'Raleway';
-        font-size: 36px;
-        background: $primary-color;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        font-family: "bion-bold";
-        margin-bottom: 30px;
-        padding-top: 40px;
-        padding-left: 30px;
-    }
-    .questions-button {
-        button {
-            padding: 12px 60px;
-            background: $primary-color;
-            color: white;
-            text-transform: uppercase;
-            border-radius: 70px;
-            font-size: 16px;
-            border: none;
-            margin-top: 30px;
-            margin-left: 60px;
-        }
-    }
-    .hero-text {
-        padding-left: 30px;
-        .form-input {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 20px;
-            input {
-                border: 1px solid rgb(149, 150, 150);
-                border-radius: 10px;
-                height: 40px;
-                padding-left: 10px;
-            }
-        }
-        .data-input {
-            font-family: 'Raleway';
-            font-size: 14px;
-            input {
-                margin-right: 10px;
-            }
-        }
-    }
 }
 
 .blog {
