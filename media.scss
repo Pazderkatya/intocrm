@@ -119,6 +119,21 @@
         }
     }
     
+    @media screen and (max-width: 605px) {
+        .basic-information .specification {
+            .specification__title {
+                font-size: 18px;
+            }
+            .specification__paragraph {
+                font-size: 14px;
+            }
+        }
+        .services .big-wrapper .specification button {
+            font-size: 12px;
+            padding: 10px 35px;
+        }
+    }
+    
     @media screen and (max-width: 400px) {
         .small-container .wrapper-lesson .icons-crm {
             display: flex;
