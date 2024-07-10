@@ -740,8 +740,46 @@ section {
         .form-left__calculator {
             .calculator-services {
                 background: rgba(255, 255, 255, 0.69);
-                display: flex;
-                flex-direction: row;
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                row-gap: 17px;
+                column-gap: 12px;
+                column-gap: 15px;
+                width: 100%;
+                margin-bottom: 20px;
+                border-radius: 30px;
+                padding: 31px 36px 38px 8px;
+                &__element {
+                    grid-column: span 3;
+                    label {
+                        font-family: 'Raleway';
+                        font-size: 16px;
+                    }
+                    .square {
+                        position: absolute;
+                        z-index: -1;
+                        opacity: 0;
+                    }
+                    .square+label {
+                        display: inline-flex;
+                        align-items: center;
+                        user-select: none;
+                    }
+                    .square+label::before {
+                        content: '';
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+                        border: 1px solid #A6A6A6;
+                        border-radius: 8px;
+                        margin-right: 11px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 50% 50%;
+                    }
+                }
             }
             button {
                 font-family: 'Raleway';
@@ -1141,7 +1179,7 @@ footer {
 }
 
 .faq {
-    &_header {
+    &__header {
         font-size: 36px;
         background: $primary-color;
         -webkit-background-clip: text;
@@ -1150,18 +1188,18 @@ footer {
         font-family: "bion-bold";
         margin-bottom: 50px;
     }
-    &_block {
+    &__block {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    &_grid {
+    &__grid {
         display: flex;
         gap: 20px;
         flex-direction: column;
     }
-    &_button {
+    &__button {
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -1183,12 +1221,12 @@ footer {
             transition: transform 0.5s ease;
         }
     }
-    &_title {
+    &__title {
         text-align: left;
         font-size: 16px;
         width: 77%;
     }
-    &_case {
+    &__case {
         display: flex;
         gap: 20px;
         flex-direction: column;

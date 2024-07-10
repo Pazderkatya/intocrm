@@ -97,11 +97,32 @@
   .big-wrapper .basic-information .logo-text__icons {
     padding: 5px;
   }
+  .big-wrapper .license h2 {
+    font-size: 20px;
+  }
+  .big-wrapper .license .card__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
   .blog .card-wrapper {
     display: flex;
     flex-direction: column;
   }
   .blog .card-wrapper__header h2 {
+    font-size: 20px;
+  }
+  .case .blog__header h2 {
+    font-size: 20px;
+  }
+  .case__description {
+    font-size: 18px;
+  }
+  .case .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .faq__header {
     font-size: 20px;
   }
 }

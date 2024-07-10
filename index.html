@@ -647,31 +647,31 @@
                 </div>
             </section>
             <section class="faq">
-                <div class="faq_block">
-                    <h2 class="faq_header">Часто задаваемые вопросы</h2>
-                    <div class="faq_grid">
-                        <div class="faq_elements">
-                            <div class="faq_button" data-bs-target="#collapseOne" data-bs-toggle="collapse">
-                                <div class="faq_case">
-                                    <div class="faq_title">
+                <div class="faq__block">
+                    <h2 class="faq__header">Часто задаваемые вопросы</h2>
+                    <div class="faq__grid">
+                        <div class="faq__elements">
+                            <div class="faq__button" data-bs-target="#collapseOne" data-bs-toggle="collapse">
+                                <div class="faq__case">
+                                    <div class="faq__title">
                                         Наша команда готова уделять максимальное внимание вашим потребностям, предлагать наиболее оптимальные решения и строить отношения на взаимном доверии и долгосрочном партнерстве.
                                     </div>
-                                    <div id="collapseOne" class="faq_content collapse">
-                                        <div class="faq_text">
+                                    <div id="collapseOne" class="faq__content collapse">
+                                        <div class="faq__text">
                                             упс.
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="faq_elements">
-                            <div class="faq_button" data-bs-target="#collapseTwo" data-bs-toggle="collapse">
-                                <div class="faq_case">
-                                    <div class="faq_title">
+                        <div class="faq__elements">
+                            <div class="faq__button" data-bs-target="#collapseTwo" data-bs-toggle="collapse">
+                                <div class="faq__case">
+                                    <div class="faq__title">
                                         Наша команда готова уделять максимальное внимание вашим потребностям, предлагать наиболее оптимальные решения и строить отношения на взаимном доверии и долгосрочном партнерстве.
                                     </div>
-                                    <div id="collapseTwo" class="faq_content collapse">
-                                        <div class="faq_text">
+                                    <div id="collapseTwo" class="faq__content collapse">
+                                        <div class="faq__text">
                                             упс.
                                         </div>
                                     </div>
@@ -681,32 +681,6 @@
                     </div>
                 </div>
             </section>
-
-            <div class="container-map">
-                <div class="map">
-                    <div class="map-inner">
-                        <h2>Контакты</h2>
-                        <p class="map-inner__text">Адрес</p>
-                        <p>г.Нижний Новгород, ул.Ильинская 119, эт.3</p>
-                        <p class="map-inner__text">Телефон</p>
-                        <p>
-                            <a href="tel:+74992908267">+7 499 290-82-67</a>
-                            <br>
-                            <a href="tel:+79625104914">+7 962 510-49-14</a>
-                        </p>
-                        <p class="map-inner__text">Почта</p>
-                        <p>
-                            <a href="mailto:into.bitrix24@gmail.com">into.amocrm@gmail.com</a>
-                        </p>
-                        <p class="map-inner__text">Мессенджеры</p>
-                        <div style="display:flex; gap:20px; max-width:100%">
-                            <a href="https://t.me/intoCRM_bot"><img loading="lazy" src="https://intocrm.ru/images/tg.png" alt="" class="mes" style="width: 100px;" height="100px" ;></a>
-                            <a href="https://wa.me/74992908267?text=Здравствуйте! Номер моей заявки: 1719384152633368355"><img loading="lazy" src="https://intocrm.ru/images/wa.png" alt="" class="mes" style="width: 100px;" height="100px" ;></a>
-                        </div>
-                    </div>
-                    <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=215476184250" width="100%" height="620" frameborder="0" frameborder="0"></iframe>
-                </div>
-            </div>
             <section class="form-bottom">
                 <div class="form-left">
                     <div class="title-left">
@@ -744,20 +718,20 @@
                     <div class="form-left__calculator">
                         <h2 class="form-left__title">Ответьте на несколько вопросов и получите расчет стоимости работ</h2>
                         <div class="calculator-services">
-                            <div>
-                                <input class="CRM" type="radio" name="bisnes" id="CRM" value="CRM" checked>
+                            <div class="calculator-services__element">
+                                <input class="square" type="radio" name="bisnes" id="CRM" value="CRM" checked>
                                 <label for="CRM">Внедрение CRM-системы для вашего бизнеса с нуля</label>
                             </div>
-                            <div>
-                                <input class="revision" type="radio" name="bisnes" id="revision" value="revision">
+                            <div class="calculator-services__element">
+                                <input class="square" type="radio" name="bisnes" id="revision" value="revision">
                                 <label for="revision">CRM-система уже есть, необходима дорабтки системы под бизнес</label>
                             </div>
-                            <div>
-                                <input class="site" type="radio" name="bisnes" id="site" value="site">
+                            <div class="calculator-services__element">
+                                <input class="square" type="radio" name="bisnes" id="site" value="site">
                                 <label for="site">Разработка корпоративного сайта</label>
                             </div>
-                            <div>
-                                <input class="question" type="radio" name="bisnes" id="question" value="question">
+                            <div class="calculator-services__element">
+                                <input class="square" type="radio" name="bisnes" id="question" value="question">
                                 <label for="question">Задать вопрос</label>
                             </div>
                         </div>
@@ -770,6 +744,31 @@
                     </div>
                 </div>
             </section>
+            <div class="container-map">
+                <div class="map">
+                    <div class="map-inner">
+                        <h2>Контакты</h2>
+                        <p class="map-inner__text">Адрес</p>
+                        <p>г.Нижний Новгород, ул.Ильинская 119, эт.3</p>
+                        <p class="map-inner__text">Телефон</p>
+                        <p>
+                            <a href="tel:+74992908267">+7 499 290-82-67</a>
+                            <br>
+                            <a href="tel:+79625104914">+7 962 510-49-14</a>
+                        </p>
+                        <p class="map-inner__text">Почта</p>
+                        <p>
+                            <a href="mailto:into.bitrix24@gmail.com">into.amocrm@gmail.com</a>
+                        </p>
+                        <p class="map-inner__text">Мессенджеры</p>
+                        <div style="display:flex; gap:20px; max-width:100%">
+                            <a href="https://t.me/intoCRM_bot"><img loading="lazy" src="https://intocrm.ru/images/tg.png" alt="" class="mes" style="width: 100px;" height="100px" ;></a>
+                            <a href="https://wa.me/74992908267?text=Здравствуйте! Номер моей заявки: 1719384152633368355"><img loading="lazy" src="https://intocrm.ru/images/wa.png" alt="" class="mes" style="width: 100px;" height="100px" ;></a>
+                        </div>
+                    </div>
+                    <iframe src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=215476184250" width="100%" height="620" frameborder="0" frameborder="0"></iframe>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
