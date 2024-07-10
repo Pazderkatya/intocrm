@@ -67,7 +67,7 @@
             }
             &__button {
                 button {
-                    padding: 18px 90px;
+                    padding: 15px 60px;
                 }
             }
         }
@@ -125,6 +125,9 @@
         .form-crm .small-container .wrapper-lesson {
             width: 100%;
             padding: 30px;
+            &__title {
+                font-size: 20px;
+            }
         }
         .form-button {
             display: flex;

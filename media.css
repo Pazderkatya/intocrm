@@ -55,7 +55,7 @@
     flex-direction: column;
   }
   .big-wrapper .benefit__button button {
-    padding: 18px 90px;
+    padding: 15px 60px;
   }
 }
 @media screen and (max-width: 1105px) {
@@ -95,6 +95,9 @@
   .form-crm .small-container .wrapper-lesson {
     width: 100%;
     padding: 30px;
+  }
+  .form-crm .small-container .wrapper-lesson__title {
+    font-size: 20px;
   }
   .form-button {
     display: flex;
