@@ -470,7 +470,7 @@ section {
   background: transparent;
   margin-right: 30px;
 }
-.form-crm .small-container .form-button button {
+.form-crm .small-container .form-button__button {
   font-size: 16px;
   text-transform: uppercase;
   background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
@@ -480,7 +480,7 @@ section {
   border-radius: 30px;
   border: none;
 }
-.form-crm .small-container .form-button button:hover {
+.form-crm .small-container .form-button__button:hover {
   color: #fff;
   background-color: #959696;
   transition: 1.5s, liner;
@@ -750,7 +750,7 @@ section {
   flex-direction: row;
   justify-content: space-between;
 }
-.benefit_header {
+.benefit__header {
   font-size: 36px;
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   -webkit-background-clip: text;
@@ -759,14 +759,14 @@ section {
   font-family: "bion-bold";
   margin-bottom: 30px;
 }
-.benefit_text {
+.benefit__text {
   font-size: 14px;
   font-family: "Raleway", sans-serif;
   color: #000;
   width: 500px;
   margin-bottom: 23px;
 }
-.benefit_button button {
+.benefit__button button {
   border-radius: 30px;
   background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
   border: 1px solid #E5BD81;
@@ -776,7 +776,7 @@ section {
   border: none;
   padding: 19px 120px;
 }
-.benefit_card {
+.benefit__card {
   position: relative;
   display: flex;
   justify-content: center;
@@ -789,19 +789,19 @@ section {
   overflow: hidden;
   height: 200px;
 }
-.benefit_card:nth-child(1) {
+.benefit__card:nth-child(1) {
   grid-column: span 3;
 }
-.benefit_card:nth-child(4) {
+.benefit__card:nth-child(4) {
   grid-column: span 3;
 }
-.benefit_card:nth-child(3) {
+.benefit__card:nth-child(3) {
   grid-column: span 2;
 }
-.benefit_card:nth-child(2) {
+.benefit__card:nth-child(2) {
   grid-column: span 2;
 }
-.benefit_card::before, .benefit_card::after {
+.benefit__card::before, .benefit__card::after {
   content: "";
   position: absolute;
   left: 0;
@@ -811,13 +811,13 @@ section {
   background-image: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   /* Цвет краев сверху и снизу */
 }
-.benefit_card::before {
+.benefit__card::before {
   top: 0;
 }
-.benefit_card::after {
+.benefit__card::after {
   bottom: 0;
 }
-.benefit .right_side {
+.benefit .right__side {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   row-gap: 20px;
@@ -826,7 +826,7 @@ section {
   grid-template-rows: 1fr 1fr;
   width: 50%;
 }
-.benefit .big_text {
+.benefit .big__text {
   font-size: 56px;
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   -webkit-background-clip: text;
@@ -837,13 +837,13 @@ section {
   line-height: normal;
   text-align: center;
 }
-.benefit .big_text span:not(.number) {
+.benefit .big__text span:not(.number) {
   margin-bottom: 14px;
 }
-.benefit .big_text .number {
+.benefit .big__text .number {
   font-size: 96px;
 }
-.benefit .small_text {
+.benefit .small__text {
   font-size: 14px;
   text-align: center;
   font-family: "Raleway", sans-serif;
@@ -1061,7 +1061,9 @@ footer {
   font-size: 20px;
 }
 .blog .button-block_gradient button {
-  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
+  border: 1px solid #E5BD81;
+  box-shadow: 0px 16px 50px -16px rgba(229, 174, 92, 0.6);
   color: white;
   padding: 8px 64px;
   font-size: 20px;

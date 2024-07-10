@@ -23,10 +23,17 @@
   .foto-crm {
     display: none;
   }
+  .big-wrapper .benefit {
+    display: flex;
+    flex-direction: column;
+  }
+  .big-wrapper .benefit__button button {
+    margin-bottom: 15px;
+  }
 }
 @media screen and (max-width: 1045px) {
   .work-stages h2 {
-    font-size: 28px;
+    font-size: 20px;
   }
   .work-stages__wrapper {
     margin: 0 auto;
@@ -43,6 +50,13 @@
   .work-stages__wrapper .description .wrapper-numbers span {
     padding: 5px;
   }
+  .big-wrapper .benefit .right__side {
+    display: flex;
+    flex-direction: column;
+  }
+  .big-wrapper .benefit__button button {
+    padding: 18px 90px;
+  }
 }
 @media screen and (max-width: 1105px) {
   .big-wrapper .other-information .services-all .reference img {
@@ -51,7 +65,7 @@
 }
 @media screen and (max-width: 850px) {
   .big-wrapper .basic-information .specification__title {
-    font-size: 26px;
+    font-size: 20px;
   }
   .big-wrapper .basic-information .logo-text p {
     font-size: 18px;
@@ -73,12 +87,8 @@
     display: flex;
     flex-direction: column;
   }
-  .container-map .map .map-inner h2 {
-    font-size: 30px;
-  }
-  .container-map .map .map-inner div {
-    display: flex;
-    flex-direction: column;
+  .container-map .map .map-inner {
+    display: none;
   }
 }
 @media screen and (max-width: 681px) {
@@ -101,7 +111,7 @@
     padding: 15px 25px;
   }
   .small-container .wrapper-lesson__title {
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
     margin-bottom: 40px;
   }
@@ -116,23 +126,23 @@
 }
 @media screen and (max-width: 605px) {
   .basic-information .specification .specification__title {
-    font-size: 18px;
+    font-size: 16px;
   }
   .basic-information .specification .specification__paragraph {
-    font-size: 14px;
+    font-size: 12px;
   }
   .services .big-wrapper .specification button {
     font-size: 12px;
-    padding: 10px 35px;
+    padding: 10px 20px;
   }
 }
 @media screen and (max-width: 585px) {
   .basic-information .specification__title {
-    font-size: 26px;
+    font-size: 20px;
   }
   .basic-information .logo-text p {
-    font-size: 18px;
-    padding: 4px 18px;
+    font-size: 16px;
+    padding: 4px 16px;
   }
   .basic-information .logo-text__icons {
     padding: 6px;

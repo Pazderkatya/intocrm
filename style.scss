@@ -502,7 +502,7 @@ section {
                 background: transparent;
                 margin-right: 30px;
             }
-            button {
+            &__button {
                 font-size: 16px;
                 text-transform: uppercase;
                 background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
@@ -512,7 +512,7 @@ section {
                 border-radius: 30px;
                 border: none;
             }
-            button:hover {
+            &__button:hover {
                 color: #fff;
                 background-color: #959696;
                 transition: 1.5s, liner;
@@ -786,7 +786,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    &_header {
+    &__header {
         font-size: 36px;
         background: $primary-color;
         -webkit-background-clip: text;
@@ -795,14 +795,14 @@ section {
         font-family: "bion-bold";
         margin-bottom: 30px;
     }
-    &_text {
+    &__text {
         font-size: 14px;
         font-family: "Raleway", sans-serif;
         color: #000;
         width: 500px;
         margin-bottom: 23px;
     }
-    &_button {
+    &__button {
         button {
             border-radius: 30px;
             background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
@@ -814,7 +814,7 @@ section {
             padding: 19px 120px;
         }
     }
-    &_card {
+    &__card {
         position: relative;
         display: flex;
         justify-content: center;
@@ -856,7 +856,7 @@ section {
             bottom: 0;
         }
     }
-    .right_side {
+    .right__side {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         row-gap: 20px;
@@ -864,7 +864,7 @@ section {
         grid-template-rows: 1fr 1fr;
         width: 50%;
     }
-    .big_text {
+    .big__text {
         font-size: 56px;
         background: $primary-color;
         -webkit-background-clip: text;
@@ -881,7 +881,7 @@ section {
             font-size: 96px;
         }
     }
-    .small_text {
+    .small__text {
         font-size: 14px;
         text-align: center;
         font-family: "Raleway", sans-serif;
@@ -1105,7 +1105,9 @@ footer {
         }
         &-block_gradient {
             button {
-                background: $primary-color;
+                background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
+                border: 1px solid #E5BD81;
+                box-shadow: 0px 16px 50px -16px #E5AE5C99;
                 color: white;
                 padding: 8px 64px;
                 font-size: 20px;

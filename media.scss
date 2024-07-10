@@ -24,12 +24,21 @@
         .foto-crm {
             display: none;
         }
+        .big-wrapper .benefit {
+            display: flex;
+            flex-direction: column;
+            &__button {
+                button {
+                    margin-bottom: 15px;
+                }
+            }
+        }
     }
     
     @media screen and (max-width: 1045px) {
         .work-stages {
             h2 {
-                font-size: 28px;
+                font-size: 20px;
             }
             &__wrapper {
                 margin: 0 auto;
@@ -51,6 +60,17 @@
                 }
             }
         }
+        .big-wrapper .benefit {
+            .right__side {
+                display: flex;
+                flex-direction: column;
+            }
+            &__button {
+                button {
+                    padding: 18px 90px;
+                }
+            }
+        }
     }
     
     @media screen and (max-width: 1105px) {
@@ -66,7 +86,7 @@
             .basic-information {
                 .specification {
                     &__title {
-                        font-size: 26px;
+                        font-size: 20px;
                     }
                 }
                 .logo-text {
@@ -96,12 +116,8 @@
             display: flex;
             flex-direction: column;
         }
-        .container-map .map .map-inner h2 {
-            font-size: 30px;
-        }
-        .container-map .map .map-inner div {
-            display: flex;
-            flex-direction: column;
+        .container-map .map .map-inner {
+            display: none;
         }
     }
     
@@ -125,7 +141,7 @@
             width: 100%;
             padding: 15px 25px;
             &__title {
-                font-size: 25px;
+                font-size: 20px;
                 text-align: left;
                 margin-bottom: 40px;
             }
@@ -143,15 +159,15 @@
     @media screen and (max-width: 605px) {
         .basic-information .specification {
             .specification__title {
-                font-size: 18px;
+                font-size: 16px;
             }
             .specification__paragraph {
-                font-size: 14px;
+                font-size: 12px;
             }
         }
         .services .big-wrapper .specification button {
             font-size: 12px;
-            padding: 10px 35px;
+            padding: 10px 20px;
         }
     }
     
@@ -159,13 +175,13 @@
         .basic-information {
             .specification {
                 &__title {
-                    font-size: 26px;
+                    font-size: 20px;
                 }
             }
             .logo-text {
                 p {
-                    font-size: 18px;
-                    padding: 4px 18px;
+                    font-size: 16px;
+                    padding: 4px 16px;
                 }
                 &__icons {
                     padding: 6px;
