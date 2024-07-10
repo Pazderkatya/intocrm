@@ -61,14 +61,43 @@
             }
         }
         .big-wrapper .benefit {
+            .left__side {
+                .benefit__header {
+                    h2 {
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                }
+                .benefit__text {
+                    width: 100%;
+                }
+            }
             .right__side {
                 display: flex;
                 flex-direction: column;
+                width: 100%;
             }
             &__button {
+                margin: auto 0;
                 button {
                     padding: 15px 60px;
                 }
+            }
+            .big__text {
+                .number {
+                    font-size: 64px;
+                }
+            }
+        }
+        .review {
+            h2 {
+                font-size: 20px;
+            }
+            .review-inner .swiper-wrapper {
+                position: relative;
+            }
+            img {
+                position: absolute;
             }
         }
     }
@@ -97,6 +126,15 @@
                     &__icons {
                         padding: 5px;
                     }
+                }
+            }
+        }
+        .blog .card-wrapper {
+            display: flex;
+            flex-direction: column;
+            &__header {
+                h2 {
+                    font-size: 20px;
                 }
             }
         }

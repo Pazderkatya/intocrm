@@ -50,12 +50,35 @@
   .work-stages__wrapper .description .wrapper-numbers span {
     padding: 5px;
   }
+  .big-wrapper .benefit .left__side .benefit__header h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .big-wrapper .benefit .left__side .benefit__text {
+    width: 100%;
+  }
   .big-wrapper .benefit .right__side {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+  .big-wrapper .benefit__button {
+    margin: auto 0;
   }
   .big-wrapper .benefit__button button {
     padding: 15px 60px;
+  }
+  .big-wrapper .benefit .big__text .number {
+    font-size: 64px;
+  }
+  .review h2 {
+    font-size: 20px;
+  }
+  .review .review-inner .swiper-wrapper {
+    position: relative;
+  }
+  .review img {
+    position: absolute;
   }
 }
 @media screen and (max-width: 1105px) {
@@ -73,6 +96,13 @@
   }
   .big-wrapper .basic-information .logo-text__icons {
     padding: 5px;
+  }
+  .blog .card-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .blog .card-wrapper__header h2 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 785px) {
