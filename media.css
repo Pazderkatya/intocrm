@@ -1,4 +1,4 @@
-@media screen and (max-width: 1236px) {
+@media screen and (max-width: 1319px) {
   .hero {
     display: flex;
     flex-direction: column;
@@ -57,9 +57,11 @@
   .big-wrapper .benefit .left__side .benefit__text {
     width: 100%;
   }
-  .big-wrapper .benefit .right__side {
+  .big-wrapper .benefit .left__side .benefit__button {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+  }
+  .big-wrapper .benefit .right__side {
     width: 100%;
   }
   .big-wrapper .benefit__button {
@@ -74,11 +76,27 @@
   .review h2 {
     font-size: 20px;
   }
+  .review .review-inner {
+    position: relative;
+  }
   .review .review-inner .swiper-wrapper {
     position: relative;
   }
   .review img {
     position: absolute;
+    top: 0;
+  }
+  .review .review-inner .swiper-wrapper .swiper-slider .company .text .text__contakts {
+    padding-left: 60px;
+  }
+  .review .review-inner .swiper-wrapper .swiper-slider .company .text img {
+    padding-top: 20px;
+  }
+  .review .review-inner .swiper-wrapper .swiper-slider .company .basic-text {
+    padding-top: 20px;
+  }
+  .review .review-inner .swiper-wrapper .swiper-slider .company .basic-text img {
+    display: none;
   }
 }
 @media screen and (max-width: 1105px) {
@@ -87,20 +105,28 @@
   }
 }
 @media screen and (max-width: 850px) {
-  .big-wrapper .basic-information .specification__title {
+  .services .big-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .services .big-wrapper .basic-information .specification__title {
     font-size: 20px;
   }
-  .big-wrapper .basic-information .logo-text p {
+  .services .big-wrapper .basic-information .specification div {
+    display: flex;
+    justify-content: center;
+  }
+  .services .big-wrapper .basic-information .logo-text p {
     font-size: 18px;
     padding: 4px 18px;
   }
-  .big-wrapper .basic-information .logo-text__icons {
+  .services .big-wrapper .basic-information .logo-text__icons {
     padding: 5px;
   }
-  .big-wrapper .license h2 {
+  .license h2 {
     font-size: 20px;
   }
-  .big-wrapper .license .card__wrapper {
+  .license .card__wrapper {
     display: flex;
     flex-direction: column;
   }
@@ -130,13 +156,6 @@
   .big-wrapper .other-information .services-all .reference__title {
     width: 100%;
     font-size: 28px;
-  }
-  .big-wrapper .other-information .services-all .reference img {
-    display: none;
-  }
-  .other-information {
-    display: flex;
-    flex-direction: column;
   }
   .container-map .map .map-inner {
     display: none;

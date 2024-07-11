@@ -779,9 +779,22 @@ section {
                         background-position: center center;
                         background-size: 50% 50%;
                     }
+                    .square:not(:disabled):active+label::before {
+                        background-color: #E5BD81;
+                        height: 16px;
+                        width: 16px;
+                        border-radius: 8px;
+                        border-color: #E5BD81;
+                    }
+                    .square:not(:disabled):not(:checked)+label:hover::before {
+                        border-color: #E5BD81;
+                    }
+                    .square:focus+label::before {
+                        box-shadow: 0px 16px 50px -16px #E5AE5C99;
+                    }
                 }
             }
-            button {
+            input {
                 font-family: 'Raleway';
                 font-size: 20px;
                 text-transform: uppercase;

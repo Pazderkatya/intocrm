@@ -1,268 +1,289 @@
-    @media screen and (max-width: 1236px) {
-        .hero {
+@media screen and (max-width: 1319px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+    }
+    .wrapper-title {
+        max-width: 100%;
+    }
+    .fouder {
+        display: none;
+    }
+    .fouder-button {
+        max-width: 900px;
+    }
+    .form-questions {
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .foto-crm {
+        display: none;
+    }
+    .big-wrapper .benefit {
+        display: flex;
+        flex-direction: column;
+        &__button {
+            button {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .work-stages {
+        h2 {
+            font-size: 20px;
+        }
+        &__wrapper {
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            max-width: 100%;
-            width: 100%;
-        }
-        .wrapper-title {
-            max-width: 100%;
-        }
-        .fouder {
-            display: none;
-        }
-        .fouder-button {
-            max-width: 900px;
-        }
-        .form-questions {
-            background-image: none;
-        }
-    }
-    
-    @media screen and (max-width: 1200px) {
-        .foto-crm {
-            display: none;
-        }
-        .big-wrapper .benefit {
-            display: flex;
-            flex-direction: column;
-            &__button {
-                button {
-                    margin-bottom: 15px;
+            width: 70%;
+            .description {
+                &__title {
+                    font-size: 16px;
                 }
-            }
-        }
-    }
-    
-    @media screen and (max-width: 1045px) {
-        .work-stages {
-            h2 {
-                font-size: 20px;
-            }
-            &__wrapper {
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                width: 70%;
-                .description {
-                    &__title {
-                        font-size: 16px;
-                    }
-                    &__paragraph {
-                        font-size: 12px;
-                    }
-                    .wrapper-numbers {
-                        span {
-                            padding: 5px;
-                        }
-                    }
+                &__paragraph {
+                    font-size: 12px;
                 }
-            }
-        }
-        .big-wrapper .benefit {
-            .left__side {
-                .benefit__header {
-                    h2 {
-                        font-size: 20px;
-                        text-align: center;
-                    }
-                }
-                .benefit__text {
-                    width: 100%;
-                }
-            }
-            .right__side {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
-            &__button {
-                margin: auto 0;
-                button {
-                    padding: 15px 60px;
-                }
-            }
-            .big__text {
-                .number {
-                    font-size: 64px;
-                }
-            }
-        }
-        .review {
-            h2 {
-                font-size: 20px;
-            }
-            .review-inner .swiper-wrapper {
-                position: relative;
-            }
-            img {
-                position: absolute;
-            }
-        }
-    }
-    
-    @media screen and (max-width: 1105px) {
-        .big-wrapper .other-information .services-all .reference {
-            img {
-                display: none;
-            }
-        }
-    }
-    
-    @media screen and (max-width: 850px) {
-        .big-wrapper {
-            .basic-information {
-                .specification {
-                    &__title {
-                        font-size: 20px;
-                    }
-                }
-                .logo-text {
-                    p {
-                        font-size: 18px;
-                        padding: 4px 18px;
-                    }
-                    &__icons {
+                .wrapper-numbers {
+                    span {
                         padding: 5px;
                     }
                 }
             }
-            .license {
+        }
+    }
+    .big-wrapper .benefit {
+        .left__side {
+            .benefit__header {
                 h2 {
                     font-size: 20px;
+                    text-align: center;
                 }
-                .card__wrapper {
-                    display: flex;
-                    flex-direction: column;
-                }
+            }
+            .benefit__text {
+                width: 100%;
+            }
+            .benefit__button {
+                display: flex;
+                justify-content: center;
             }
         }
-        .blog .card-wrapper {
-            display: flex;
-            flex-direction: column;
-            &__header {
-                h2 {
-                    font-size: 20px;
-                }
+        .right__side {
+            width: 100%;
+        }
+        &__button {
+            margin: auto 0;
+            button {
+                padding: 15px 60px;
             }
         }
-        .case {
-            .blog__header {
-                h2 {
-                    font-size: 20px;
-                }
-            }
-            &__description {
-                font-size: 18px;
-            }
-            .card-wrapper {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 10px;
-            }
-        }
-        .faq {
-            &__header {
-                font-size: 20px;
+        .big__text {
+            .number {
+                font-size: 64px;
             }
         }
     }
-    
-    @media screen and (max-width: 785px) {
-        .big-wrapper .other-information .services-all .reference {
-            &__title {
-                width: 100%;
-                font-size: 28px;
-            }
-            img {
-                display: none;
-            }
+    .review {
+        h2 {
+            font-size: 20px;
         }
-        .other-information {
-            display: flex;
-            flex-direction: column;
+        .review-inner {
+            position: relative;
         }
-        .container-map .map .map-inner {
+        .review-inner .swiper-wrapper {
+            position: relative;
+        }
+        img {
+            position: absolute;
+            top: 0;
+        }
+    }
+    .review .review-inner .swiper-wrapper .swiper-slider .company .text {
+        .text__contakts {
+            padding-left: 60px;
+        }
+        img {
+            padding-top: 20px;
+        }
+    }
+    .review .review-inner .swiper-wrapper .swiper-slider .company .basic-text {
+        padding-top: 20px;
+        img {
             display: none;
         }
     }
-    
-    @media screen and (max-width: 681px) {
-        .form-crm .small-container .wrapper-lesson {
-            width: 100%;
-            padding: 30px;
-            &__title {
-                font-size: 20px;
-            }
-        }
-        .form-button {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            &__line {
-                margin-bottom: 10px;
-            }
+}
+
+@media screen and (max-width: 1105px) {
+    .big-wrapper .other-information .services-all .reference {
+        img {
+            display: none;
         }
     }
-    
-    @media screen and (max-width: 650px) {
-        .small-container .wrapper-lesson {
-            width: 100%;
-            padding: 15px 25px;
-            &__title {
-                font-size: 20px;
-                text-align: left;
-                margin-bottom: 40px;
-            }
-            &__description {
-                font-size: 12px;
-                margin-bottom: 25px;
-            }
-        }
-        .big-wrapper {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    
-    @media screen and (max-width: 605px) {
-        .basic-information .specification {
-            .specification__title {
-                font-size: 16px;
-            }
-            .specification__paragraph {
-                font-size: 12px;
-            }
-        }
-        .services .big-wrapper .specification button {
-            font-size: 12px;
-            padding: 10px 20px;
-        }
-    }
-    
-    @media screen and (max-width: 585px) {
+}
+
+@media screen and (max-width: 1005px) {}
+
+@media screen and (max-width: 850px) {
+    .services .big-wrapper {
+        display: flex;
+        flex-direction: column;
         .basic-information {
             .specification {
                 &__title {
                     font-size: 20px;
                 }
             }
+            .specification div {
+                display: flex;
+                justify-content: center;
+            }
             .logo-text {
                 p {
-                    font-size: 16px;
-                    padding: 4px 16px;
+                    font-size: 18px;
+                    padding: 4px 18px;
                 }
                 &__icons {
-                    padding: 6px;
+                    padding: 5px;
                 }
             }
         }
     }
-    
-    @media screen and (max-width: 400px) {
-        .small-container .wrapper-lesson .icons-crm {
+    .license {
+        h2 {
+            font-size: 20px;
+        }
+        .card__wrapper {
             display: flex;
             flex-direction: column;
         }
     }
+    .blog .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        &__header {
+            h2 {
+                font-size: 20px;
+            }
+        }
+    }
+    .case {
+        .blog__header {
+            h2 {
+                font-size: 20px;
+            }
+        }
+        &__description {
+            font-size: 18px;
+        }
+        .card-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+    }
+    .faq {
+        &__header {
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 785px) {
+    .big-wrapper .other-information .services-all .reference {
+        &__title {
+            width: 100%;
+            font-size: 28px;
+        }
+    }
+    .container-map .map .map-inner {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 681px) {
+    .form-crm .small-container .wrapper-lesson {
+        width: 100%;
+        padding: 30px;
+        &__title {
+            font-size: 20px;
+        }
+    }
+    .form-button {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &__line {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .small-container .wrapper-lesson {
+        width: 100%;
+        padding: 15px 25px;
+        &__title {
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+        &__description {
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
+    }
+    .big-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .basic-information .specification {
+        .specification__title {
+            font-size: 16px;
+        }
+        .specification__paragraph {
+            font-size: 12px;
+        }
+    }
+    .services .big-wrapper .specification button {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .basic-information {
+        .specification {
+            &__title {
+                font-size: 20px;
+            }
+        }
+        .logo-text {
+            p {
+                font-size: 16px;
+                padding: 4px 16px;
+            }
+            &__icons {
+                padding: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .small-container .wrapper-lesson .icons-crm {
+        display: flex;
+        flex-direction: column;
+    }
+}
