@@ -82,3 +82,5 @@ const swiper = new Swiper('.swiper', {
     speed: 400,
     spaceBetween: 100,
 });
+
+let form = document.createElement('form')

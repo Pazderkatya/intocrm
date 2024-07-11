@@ -12,11 +12,19 @@
     .fouder {
         display: none;
     }
-    .fouder-button {
-        max-width: 900px;
+    .hero .fouder-wrapper .fouder-button button {
+        font-size: 16px;
+        padding: 16px 41px;
     }
     .form-questions {
         background-image: none;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .form-bottom {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -130,7 +138,28 @@
     }
 }
 
-@media screen and (max-width: 1005px) {}
+@media screen and (max-width: 1005px) {
+    .blog {
+        .blog__button {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .blog .button-block {
+        gap: 5px;
+        button {
+            padding: 8px 20px;
+        }
+    }
+    .blog .button-block_gradient {
+        margin: 0 auto;
+        button {
+            padding: 8px 30px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    }
+}
 
 @media screen and (max-width: 850px) {
     .services .big-wrapper {
@@ -153,6 +182,13 @@
                 }
                 &__icons {
                     padding: 5px;
+                }
+            }
+        }
+        .form-left {
+            &__calculator {
+                h2 {
+                    font-size: 20px;
                 }
             }
         }
@@ -186,7 +222,7 @@
         }
         .card-wrapper {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 10px;
         }
     }
