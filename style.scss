@@ -1082,13 +1082,13 @@ section {
 
 .inquiry-bottom {
     background-image: url(/assets/image\ 31.png);
-    background-repeat: no-repeat;
-    .title-block {
-        background-color: #2D3F6D;
-        border-radius: 40px;
+    text-align: center;
+    .title-container {
         &__line {
+            border-radius: 40px;
+            background-color: #2D3F6D;
             text-align: center;
-            padding: 80px 350px;
+            padding: 76px 350px;
             color: #F6FAFF;
         }
     }
@@ -1103,11 +1103,12 @@ section {
                     margin-bottom: 53px;
                 }
                 input {
-                    color: #959696;
+                    border: 1px solid #959696;
                     border-radius: 10px;
-                    max-height: 63px;
+                    max-width: 570px;
                     margin: 0 auto;
                     margin-bottom: 15px;
+                    padding: 10px;
                 }
             }
         }

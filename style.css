@@ -1031,15 +1031,13 @@ section {
 
 .inquiry-bottom {
   background-image: url(/assets/image\ 31.png);
-  background-repeat: no-repeat;
-}
-.inquiry-bottom .title-block {
-  background-color: #2D3F6D;
-  border-radius: 40px;
-}
-.inquiry-bottom .title-block__line {
   text-align: center;
-  padding: 80px 350px;
+}
+.inquiry-bottom .title-container__line {
+  border-radius: 40px;
+  background-color: #2D3F6D;
+  text-align: center;
+  padding: 76px 350px;
   color: #F6FAFF;
 }
 .inquiry-bottom .inquiry {
@@ -1054,11 +1052,12 @@ section {
   margin-bottom: 53px;
 }
 .inquiry-bottom .inquiry .inquiry-form .form-type input {
-  color: #959696;
+  border: 1px solid #959696;
   border-radius: 10px;
-  max-height: 63px;
+  max-width: 570px;
   margin: 0 auto;
   margin-bottom: 15px;
+  padding: 10px;
 }
 .inquiry-bottom .inquiry .submit {
   background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
