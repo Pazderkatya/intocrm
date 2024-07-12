@@ -1057,7 +1057,7 @@ section {
   max-width: 570px;
   margin: 0 auto;
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 10px 80px;
 }
 .inquiry-bottom .inquiry .submit {
   background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
