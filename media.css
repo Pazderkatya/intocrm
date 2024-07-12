@@ -25,9 +25,6 @@
     display: flex;
     flex-direction: column;
   }
-  .form-bottom .form-left__calculator h2 {
-    font-size: 20px;
-  }
 }
 @media screen and (max-width: 1200px) {
   .foto-crm {
@@ -152,6 +149,9 @@
   }
   .services .big-wrapper .basic-information .logo-text__icons {
     padding: 5px;
+  }
+  .services .big-wrapper .form-left__calculator h2 {
+    font-size: 20px;
   }
   .license h2 {
     font-size: 20px;

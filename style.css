@@ -1029,6 +1029,44 @@ section {
   flex-direction: column;
 }
 
+.inquiry {
+  background-image: url(/assets/image\ 31.png);
+  text-align: center;
+}
+.inquiry .inquiry-title {
+  background-color: #2D3F6D;
+  border-radius: 40px;
+}
+.inquiry .inquiry-title__line {
+  text-align: center;
+  padding: 80px 350px;
+  color: #F6FAFF;
+}
+.inquiry form .form-type {
+  display: flex;
+  flex-direction: column;
+}
+.inquiry form .form-type__text {
+  margin-bottom: 53px;
+}
+.inquiry form .form-type__line {
+  margin-bottom: 15px;
+  color: #959696;
+  border-radius: 10px;
+  max-width: 570px;
+  max-height: 63px;
+}
+.inquiry form .submit {
+  background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
+  border: 1px solid #E5BD81;
+  box-shadow: 0px 16px 50px -16px rgba(229, 174, 92, 0.6);
+  color: white;
+  padding: 9px 60px;
+  font-size: 20px;
+  border-radius: 18px;
+  border: none;
+}
+
 .form-bottom {
   display: flex;
   flex-direction: row;
