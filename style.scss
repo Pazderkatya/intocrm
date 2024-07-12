@@ -1080,10 +1080,10 @@ section {
     }
 }
 
-.inquiry {
+.inquiry-bottom {
     background-image: url(/assets/image\ 31.png);
-    text-align: center;
-    .inquiry-title {
+    background-repeat: no-repeat;
+    .title-block {
         background-color: #2D3F6D;
         border-radius: 40px;
         &__line {
@@ -1092,19 +1092,23 @@ section {
             color: #F6FAFF;
         }
     }
-    form {
-        .form-type {
-            display: flex;
-            flex-direction: column;
-            &__text {
-                margin-bottom: 53px;
-            }
-            &__line {
-                margin-bottom: 15px;
-                color: #959696;
-                border-radius: 10px;
-                max-width: 570px;
-                max-height: 63px;
+    .inquiry {
+        padding: 87px 386px 85px 383px;
+        .inquiry-form {
+            .form-type {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                &__text {
+                    margin-bottom: 53px;
+                }
+                input {
+                    color: #959696;
+                    border-radius: 10px;
+                    max-height: 63px;
+                    margin: 0 auto;
+                    margin-bottom: 15px;
+                }
             }
         }
         .submit {
