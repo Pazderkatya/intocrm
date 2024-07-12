@@ -1034,9 +1034,11 @@ section {
   text-align: center;
   background-size: 100%;
 }
-.inquiry-bottom .title-container__line {
+.inquiry-bottom .title-container {
+  background: #2D3F6D;
   border-radius: 40px;
-  background-color: #2D3F6D;
+}
+.inquiry-bottom .title-container__line {
   text-align: center;
   padding: 76px 350px;
   color: #F6FAFF;
