@@ -1032,6 +1032,7 @@ section {
 .inquiry-bottom {
   background-image: url(/assets/image\ 31.png);
   text-align: center;
+  background-size: 100%;
 }
 .inquiry-bottom .title-container__line {
   border-radius: 40px;
