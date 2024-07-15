@@ -1496,17 +1496,31 @@ footer {
 }
 
 .basic {
+    display: flex;
+    flex-direction: row;
     .left-side {
         max-width: 1000px;
-        max-height: 1016px;
         border-radius: 30px;
-        .bottom-menu {
+        box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1);
+        padding: 36px 37px 30px 20px;
+        margin-right: 19px;
+        h2 {
+            margin-bottom: 28px;
+        }
+        img {
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 121px;
+        }
+        .bottom-text {
             background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
             border-radius: 30px;
             padding: 28px 14px 23px 30px;
             color: #fff;
             display: flex;
             flex-direction: row;
+            max-height: 105px;
             .text {
                 h3 {
                     font-size: 18px;
@@ -1517,13 +1531,24 @@ footer {
                 }
             }
             .social {
-                a {
-                    border: 2px solid #fff;
-                    border-radius: 40px;
-                    padding: 7px;
-                    margin-right: 20px;
-                }
+                display: flex;
+                gap: 14px;
             }
+        }
+    }
+    .right-side {
+        .card__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card {
+            max-width: 320px;
+            box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
+        .card:not(:last-child) {
+            margin-bottom: 20px;
         }
     }
 }
