@@ -1443,19 +1443,15 @@ footer {
 }
 .basic .left-side {
   max-width: 1000px;
+  max-height: 1016px;
+  overflow-y: scroll;
   border-radius: 30px;
   box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1);
   padding: 36px 37px 30px 20px;
   margin-right: 19px;
-}
-.basic .left-side h2 {
-  margin-bottom: 28px;
-}
-.basic .left-side img {
-  margin-bottom: 30px;
-}
-.basic .left-side p {
-  margin-bottom: 121px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .basic .left-side .bottom-text {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
@@ -1476,6 +1472,15 @@ footer {
 .basic .left-side .bottom-text .social {
   display: flex;
   gap: 14px;
+}
+.basic .left-side .bottom-text .social svg path {
+  fill: white;
+}
+.basic .left-side .bottom-text .social svg circle {
+  stroke: white;
+}
+.basic .left-side .bottom-text .social .blau {
+  fill: #204973;
 }
 .basic .right-side .card__container {
   display: flex;
