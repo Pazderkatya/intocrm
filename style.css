@@ -1442,8 +1442,8 @@ footer {
   flex-direction: row;
 }
 .basic .left-side {
-  max-width: 1000px;
-  max-height: 1016px;
+  width: 1000px;
+  height: 1016px;
   overflow-y: scroll;
   border-radius: 30px;
   box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1);
