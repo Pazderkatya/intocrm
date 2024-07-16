@@ -1440,7 +1440,7 @@ footer {
 .basic {
   display: grid;
   width: 100%;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
   gap: 20px;
 }
 .basic .left-side {
@@ -1461,7 +1461,7 @@ footer {
   color: transparent;
   font-size: 40px;
   font-family: "bion-bold";
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 .basic .left-side .video {
   width: 100%;
@@ -1508,4 +1508,59 @@ footer {
 }
 .basic .right-side .card:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.page {
+  border-radius: 30px;
+  padding: 48px 0;
+  background: linear-gradient(116.9deg, rgba(243, 248, 247, 0.65) 16.43%, rgba(234, 234, 241, 0.66) 98.81%), radial-gradient(60.81% 93.32% at 87% 0%, rgba(233, 227, 214, 0.345) 0%, rgba(229, 239, 247, 0) 100%);
+  box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1);
+  display: grid;
+  width: 100%;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+.page h1 {
+  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  font-family: "bion-bold";
+  margin-bottom: 22px;
+}
+.page .relation .frame {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.page .relation .frame p {
+  font-weight: 700;
+  color: #c4c4c4;
+  border: 1px solid #c4c4c4;
+  border-radius: 12px;
+  padding: 3px 15px;
+  margin-bottom: 31px;
+}
+.page .relation .text-company {
+  display: flex;
+  flex-direction: row;
+}
+.page .relation .text-company img {
+  max-width: 46px;
+  max-height: 35px;
+  margin-right: 15px;
+}
+.page .relation .text-company__contakts {
+  display: flex;
+  flex-direction: column;
+}
+.page .relation .text-company__contakts h3 {
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+}
+.page .relation .text-company__contakts a {
+  color: #C4C4C4;
+  font-weight: 700;
 }/*# sourceMappingURL=style.css.map */
