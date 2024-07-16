@@ -1580,7 +1580,7 @@ footer {
 }
 .page .company {
   width: 100%;
-  max-height: 450px;
+  max-height: 500px;
   background: linear-gradient(130.29deg, rgba(255, 255, 255, 0.1) 8.67%, rgba(255, 255, 255, 0.8) 35.79%, rgba(255, 255, 255, 0.5) 55.39%, #ffffff 78.82%);
   box-shadow: inset -50px 4px 50px rgba(255, 255, 255, 0.69);
   border-radius: 20px;
@@ -1609,13 +1609,13 @@ footer {
   font-weight: 700;
 }
 .page .company__text h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .page .company__text p {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .page .company__text button {
   background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
