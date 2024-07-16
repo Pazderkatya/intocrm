@@ -159,6 +159,34 @@
             margin-top: 20px;
         }
     }
+    .basic {
+        display: flex;
+        flex-direction: column;
+        .left-side {
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .bottom-text {
+                display: flex;
+                flex-direction: column;
+                .text {
+                    h3 {
+                        font-size: 16px;
+                    }
+                    p {
+                        font-size: 14px;
+                    }
+                }
+                .social {
+                    margin-top: 10px;
+                    gap: 7px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 850px) {
