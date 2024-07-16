@@ -1438,11 +1438,12 @@ footer {
 }
 
 .basic {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
 }
 .basic .left-side {
-  width: 1000px;
   height: 1016px;
   overflow-y: scroll;
   border-radius: 30px;
@@ -1453,6 +1454,19 @@ footer {
   flex-direction: column;
   justify-content: space-between;
 }
+.basic .left-side h1 {
+  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  font-family: "bion-bold";
+  margin-bottom: 20px;
+}
+.basic .left-side .video {
+  width: 100%;
+  margin-bottom: 36px;
+}
 .basic .left-side .bottom-text {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   border-radius: 30px;
@@ -1460,7 +1474,7 @@ footer {
   color: #fff;
   display: flex;
   flex-direction: row;
-  max-height: 105px;
+  margin-top: 30px;
 }
 .basic .left-side .bottom-text .text h3 {
   font-size: 18px;
