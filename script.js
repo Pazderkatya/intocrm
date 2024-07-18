@@ -83,4 +83,15 @@ const swiper = new Swiper('.swiper', {
     spaceBetween: 100,
 });
 
-let form = document.createElement('form')
+
+const form = document.getElementById('form-inquiry');
+const name = document.getElementById('name');
+const phone = document.getElementById('phone');
+const submit = document.querySelector('.submit');
+
+submit.addEventListener('click', function() {
+    const messageText = sendInput.value;
+    newMessage.textContent = messageText;
+})
+
+console.log(newMessage);
