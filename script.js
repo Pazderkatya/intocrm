@@ -84,14 +84,17 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-const form = document.getElementById('form-inquiry');
-const name = document.getElementById('name');
-const phone = document.getElementById('phone');
-const submit = document.querySelector('.submit');
-
-submit.addEventListener('click', function() {
-    const messageText = sendInput.value;
-    newMessage.textContent = messageText;
+$('#form').on('submit', function(e) {
+    e.preventDefault()
+    console.log($('.form-button__line').val())
 })
 
-console.log(newMessage);
+$('#form-inquiry').on('submit', function(e) {
+    e.preventDefault()
+    console.log($('#name').val())
+})
+
+$('#form-inquiry').on('submit', function(e) {
+    e.preventDefault()
+    console.log($('#phone').val())
+})
