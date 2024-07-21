@@ -97,4 +97,26 @@ $('#form-inquiry').on('submit', function(e) {
 $('#form-inquiry').on('submit', function(e) {
     e.preventDefault()
     console.log($('#phone').val())
+    $.ajax({
+        url: 'https://intocrm24.bitrix24.ru/rest/992/ftdn3ezykg8s1fi3/crm.contact.add',
+        /* Куда пойдет запрос */
+        type: 'post',
+        /* Метод передачи (post или get) */
+        dataType: 'json',
+        contentType: "application/json; charset=utf-8",
+        /* Тип данных в ответе (xml, json, script, html). */
+        data: JSON.stringify({
+            "fields": {
+                "NAME": "test",
+                "PHONE": [{ "VALUE": $('#phone').val(), "VALUE_TYPE": "WORK" }]
+            },
+            "params": {
+                "REGISTER_SONET_EVENT": "Y"
+            }
+        }),
+        /* Параметры передаваемые в запросе. */
+        success: function(data) { /* функция которая будет выполнена после успешного запроса.  */
+            alert(data); /* В переменной data содержится ответ от index.php. */
+        }
+    });
 })
