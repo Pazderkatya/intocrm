@@ -1635,4 +1635,42 @@ footer {
 .page .white p {
   margin-bottom: 15px;
   font-weight: 500;
+}
+
+.who-are-we {
+  background: linear-gradient(116.9deg, rgba(243, 248, 247, 0.65) 16.43%, rgba(234, 234, 241, 0.66) 98.81%), radial-gradient(60.81% 93.32% at 87% 0%, rgba(233, 227, 214, 0.345) 0%, rgba(229, 239, 247, 0) 100%);
+  border-radius: 30px;
+}
+.who-are-we .wrapper-elements {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.who-are-we .wrapper-elements .elements {
+  padding: 50px;
+}
+.who-are-we .wrapper-elements .elements h1 {
+  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 42px;
+  font-family: "bion-bold";
+  margin-bottom: 20px;
+}
+.who-are-we .wrapper-elements .elements p {
+  font-family: "Raleway";
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+.who-are-we .wrapper-elements .picture {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+.who-are-we .wrapper-elements .picture__element {
+  grid-column: span 3;
 }/*# sourceMappingURL=style.css.map */
