@@ -1649,6 +1649,11 @@ footer {
 .who-are-we .wrapper-elements .elements {
   padding: 50px;
 }
+.who-are-we .wrapper-elements .elements .create-line {
+  width: 500px;
+  border-top: 3px solid #7c7c7e;
+  margin-bottom: 20px;
+}
 .who-are-we .wrapper-elements .elements h1 {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   -webkit-background-clip: text;
