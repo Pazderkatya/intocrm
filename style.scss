@@ -332,15 +332,15 @@ section {
         &__icons {
             border-radius: 50px;
             border: 1px solid #C4C4C4;
-            padding: 6px 15px;
+            padding: 4px 11px;
         }
         p {
-            font-size: 23px;
+            font-size: 20px;
             border: 1px solid #C4C4C4;
             border-radius: 50px;
-            font-weight: 700;
-            padding: 7px 20px;
-            color: #A6A6A6
+            font-family: 'Bion-Bold';
+            padding: 8px 20px;
+            color: #A6A6A6;
         }
     }
     .specification {
@@ -360,15 +360,17 @@ section {
             font-size: 16px;
             margin-bottom: 36px;
             font-family: 'Raleway';
+            font-weight: light;
         }
         button {
+            font-family: 'Raleway';
             background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
             border: 1px solid #E5BD81;
             box-shadow: 0px 16px 50px -16px #E5AE5C99;
             color: white;
             text-transform: uppercase;
             border-radius: 70px;
-            padding: 11px 52px;
+            padding: 11px 100px;
             font-size: 16px;
             font-weight: 600;
             border: none;
@@ -389,7 +391,7 @@ section {
         background: linear-gradient(116.9deg, rgba(243, 248, 247, 0.65) 16.43%, rgba(234, 234, 241, 0.66) 98.81%), radial-gradient(60.81% 93.32% at 87% 0%, rgba(233, 227, 214, 0.345) 0%, rgba(229, 239, 247, 0) 100%);
         padding-left: 25px;
         padding-right: 12px;
-        padding-top: 10px;
+        padding-top: 11px;
     }
     .services-all:first-child,
     .services-all:last-child {
@@ -398,22 +400,32 @@ section {
     .reference {
         position: relative;
         &__title {
+            font-family: 'Bion-Bold';
             font-size: 40px;
-            font-weight: bold;
             color: #1A2D43;
             line-height: 1.7;
         }
         &__description {
             font-size: 14px;
+            font-weight: light;
             margin-bottom: 20px;
             position: relative;
             z-index: 2;
+            max-width: 95%;
         }
-        img {
+        .color {
             position: absolute;
             width: 100%;
-            bottom: -16%;
-            right: -7%;
+            bottom: -17%;
+            right: -4%;
+            z-index: 1;
+            mix-blend-mode: hard-light;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            bottom: -17%;
+            right: -4%;
             mix-blend-mode: color-dodge;
             z-index: 1;
         }
@@ -424,12 +436,15 @@ section {
     display: inline-block;
     width: 100%;
     text-align: right;
+    margin-top: 8px;
+    margin-right: 10px;
     span {
-        font-size: 12px;
+        font-family: 'Bion-Bold';
+        font-size: 14px;
         color: #C4C4C4;
         padding: 3px 7px;
         border: 1px solid #C4C4C4;
-        border-radius: 10px;
+        border-radius: 12px;
         background: #fff;
     }
 }
@@ -536,8 +551,8 @@ section {
         padding: 10px 11px 27px;
         max-height: 173px;
         &__title {
+            font-family: 'Bion-Bold';
             font-size: 18px;
-            font-weight: bold;
             color: #000;
             margin-bottom: 22px;
         }
@@ -547,6 +562,22 @@ section {
     }
     .description:nth-last-child(-n+3) {
         grid-column: span 4;
+    }
+}
+
+.wrapper-numbers-color {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    margin-top: 6px;
+    margin-right: 8px;
+    span {
+        font-family: 'Bion-Bold';
+        font-size: 14px;
+        color: #fff;
+        padding: 3px 7px;
+        border-radius: 12px;
+        background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
     }
 }
 
@@ -1155,7 +1186,7 @@ section {
                     font-size: 23px;
                     border: 1px solid #C4C4C4;
                     border-radius: 50px;
-                    font-weight: 700;
+                    font-family: 'Bion-Bold';
                     padding: 7px 21px;
                     color: #A6A6A6;
                 }
