@@ -87,12 +87,45 @@ const swiper = new Swiper('.swiper', {
 $('#form').on('submit', function(e) {
     e.preventDefault()
     console.log($('.form-button__line').val())
+    $.ajax({
+        url: 'https://intocrm24.bitrix24.ru/rest/992/ftdn3ezykg8s1fi3/crm.contact.add',
+        type: 'post',
+        dataType: 'json',
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify({
+            "fields": {
+                "PHONE": [{ "VALUE": $('#phone').val(), "VALUE_TYPE": "WORK" }]
+            },
+            "params": {
+                "REGISTER_SONET_EVENT": "Y"
+            }
+        }),
+        success: function(data) {
+            $.ajax({
+                url: 'https://intocrm24.bitrix24.ru/rest/992/ftdn3ezykg8s1fi3/crm.deal.add',
+                type: 'post',
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({
+                    "fields": {
+                        "CONTACT_ID": data['result'],
+                        "CATEGORY_ID": 36,
+                        "TITLE": "Заявка с сайта, форма: Бесплатный урок",
+                        "SOURCE_ID": "SITE",
+                    },
+                    "params": {
+                        "ASSIGNED_BY_ID": "Y",
+                    }
+                }),
+                success: function(data) {
+                    console.log(data);
+                }
+            });
+            console.log(data);
+        }
+    })
 })
 
-$('#form-inquiry').on('submit', function(e) {
-    e.preventDefault()
-    console.log($('#name').val())
-})
 
 $('#form-inquiry').on('submit', function(e) {
     e.preventDefault()
@@ -107,7 +140,7 @@ $('#form-inquiry').on('submit', function(e) {
         /* Тип данных в ответе (xml, json, script, html). */
         data: JSON.stringify({
             "fields": {
-                "NAME": "test",
+                "NAME": $('#name').val(),
                 "PHONE": [{ "VALUE": $('#phone').val(), "VALUE_TYPE": "WORK" }]
             },
             "params": {
@@ -115,8 +148,30 @@ $('#form-inquiry').on('submit', function(e) {
             }
         }),
         /* Параметры передаваемые в запросе. */
-        success: function(data) { /* функция которая будет выполнена после успешного запроса.  */
-            alert(data); /* В переменной data содержится ответ от index.php. */
+        success: function(data) {
+
+            $.ajax({
+                url: 'https://intocrm24.bitrix24.ru/rest/992/ftdn3ezykg8s1fi3/crm.deal.add',
+                type: 'post',
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({
+                    "fields": {
+                        "CONTACT_ID": data['result'],
+                        "CATEGORY_ID": 36,
+                        "TITLE": "Заявка с сайта, форма: Остались вопросы?",
+                        "SOURCE_ID": "SITE",
+
+                    },
+                    "params": {
+                        "ASSIGNED_BY_ID": "Y",
+                    }
+                }),
+                success: function(data) {
+                    console.log(data);
+                }
+            });
+            console.log(data);
         }
     });
 })
