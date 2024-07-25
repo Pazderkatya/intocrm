@@ -365,6 +365,14 @@ section {
 .other-information .services-all:last-child {
   grid-column: span 4;
 }
+.other-information .services-all:first-child .reference img {
+  position: absolute;
+  width: 100%;
+  bottom: -17%;
+  right: -4%;
+  z-index: 1;
+  mix-blend-mode: hard-light;
+}
 .other-information .reference {
   position: relative;
 }
@@ -389,14 +397,6 @@ section {
   right: -4%;
   z-index: 1;
   mix-blend-mode: color-dodge;
-}
-.other-information .reference img:last-child {
-  position: absolute;
-  width: 100%;
-  bottom: -17%;
-  right: -4%;
-  z-index: 1;
-  mix-blend-mode: hard-light;
 }
 
 .wrapper-numbers {
@@ -1469,58 +1469,89 @@ footer {
   margin: auto 0;
 }
 
-.form-pop-up #window {
+.modal-form {
+  display: none;
+}
+
+.modal-form .blackout,
+.activ .blackout {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+}
+.modal-form .form-pop-up,
+.activ .form-pop-up {
+  margin: 100px auto;
+}
+.modal-form .form-pop-up #window,
+.activ .form-pop-up #window {
   display: flex;
   flex-direction: row;
   max-width: 1389px;
   padding: 78px 53px 77px;
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   border-radius: 30px;
+  margin: 0 auto;
 }
-.form-pop-up #window .right-side__element {
+.modal-form .form-pop-up #window .right-side__element,
+.activ .form-pop-up #window .right-side__element {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
   color: #fff;
 }
-.form-pop-up #window .right-side__element h1 {
+.modal-form .form-pop-up #window .right-side__element h1,
+.activ .form-pop-up #window .right-side__element h1 {
   font-family: "bion-bold";
   font-size: 48px;
   margin-bottom: 48px;
-  padding-top: 85px;
+  padding-top: 100px;
 }
-.form-pop-up #window .left-side {
+.modal-form .form-pop-up #window .left-side,
+.activ .form-pop-up #window .left-side {
   height: 0;
   width: 767px;
   border-bottom: 483px solid #fff;
   border-left: 78px solid transparent;
   border-radius: 30px;
-  box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 0;
+  box-shadow: 26px 0px 50px 0px rgba(0, 0, 0, 0.2509803922) inset;
 }
-.form-pop-up #window .left-side .window-form {
+.modal-form .form-pop-up #window .left-side .window-form,
+.activ .form-pop-up #window .left-side .window-form {
   display: flex;
   flex-direction: column;
   padding: 108px 47px 94px 178px;
 }
-.form-pop-up #window .left-side .window-form .radio-elements {
+.modal-form .form-pop-up #window .left-side .window-form .radio-elements,
+.activ .form-pop-up #window .left-side .window-form .radio-elements {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
-.form-pop-up #window .left-side .window-form .radio-elements__line:not(:last-child) {
+.modal-form .form-pop-up #window .left-side .window-form .radio-elements__line .circle,
+.activ .form-pop-up #window .left-side .window-form .radio-elements__line .circle {
+  margin-bottom: 15px;
+}
+.modal-form .form-pop-up #window .left-side .window-form .radio-elements__line:not(:last-child),
+.activ .form-pop-up #window .left-side .window-form .radio-elements__line:not(:last-child) {
   margin-right: 25px;
 }
-.form-pop-up #window .left-side .window-form .radio-elements__line:not(:last-child) label {
-  margin-bottom: 15px;
-}
-.form-pop-up #window .left-side .window-form__input {
+.modal-form .form-pop-up #window .left-side .window-form__input,
+.activ .form-pop-up #window .left-side .window-form__input {
   border-radius: 20px;
   max-width: 525px;
+  width: 100%;
   margin: 0 auto;
-  margin-bottom: 15px;
-  padding: 10px 80px;
+  margin-bottom: 25px;
+  padding: 12px 80px;
 }
-.form-pop-up #window .left-side .window-form__submit {
+.modal-form .form-pop-up #window .left-side .window-form__submit,
+.activ .form-pop-up #window .left-side .window-form__submit {
   border-radius: 30px;
   background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
   border: 1px solid #E5BD81;
