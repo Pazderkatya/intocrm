@@ -238,7 +238,7 @@ section {
   -webkit-backdrop-filter: blur(60px);
           backdrop-filter: blur(60px);
   max-width: 433px;
-  max-height: 509px;
+  max-height: 498px;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -1760,4 +1760,65 @@ footer {
 }
 .who-are-we .wrapper-elements .picture__element {
   grid-column: span 3;
+}
+
+.wrapper-amocrm {
+  background-image: url(/assets/image\ 31.png);
+  background-size: cover;
+  padding: 211px 166px 84px 114px;
+}
+.wrapper-amocrm .amocrm__title {
+  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-size: 62px;
+  font-family: "bion-bold";
+  margin-bottom: 110px;
+  font-weight: 800;
+}
+.wrapper-amocrm .amocrm .blocks {
+  display: flex;
+  flex-direction: row;
+  gap: 130px;
+}
+.wrapper-amocrm .amocrm .blocks .button-text {
+  max-width: 413px;
+  width: 100%;
+}
+.wrapper-amocrm .amocrm .blocks .button-text__input {
+  background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
+  border: 1px solid #E5BD81;
+  box-shadow: 0px 16px 50px -16px rgba(229, 174, 92, 0.6);
+  color: white;
+  padding: 25px 60px;
+  font-size: 24px;
+  border-radius: 35px;
+  border: none;
+  font-weight: bold;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  margin-bottom: 90px;
+  width: 100%;
+}
+.wrapper-amocrm .amocrm .blocks .button-text__line {
+  font-family: "Raleway";
+  font-size: 13px;
+}
+.wrapper-amocrm .amocrm .blocks .possibilities {
+  border: 1px solid #090909;
+  border-radius: 30px;
+  padding: 60px 30px 55px;
+}
+.wrapper-amocrm .amocrm .blocks .possibilities__element {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Raleway";
+  color: #27313E;
+}
+.wrapper-amocrm .amocrm .blocks .possibilities__element span {
+  color: #C4C4C4;
+  font-size: 36px;
+  font-weight: bold;
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */

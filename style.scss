@@ -269,7 +269,7 @@ section {
     .fouder-wrapper {
         backdrop-filter: blur(60px);
         max-width: 433px;
-        max-height: 509px;
+        max-height: 498px;
         border-radius: 30px;
         display: flex;
         flex-direction: column;
@@ -1825,6 +1825,68 @@ footer {
             column-gap: 20px;
             &__element {
                 grid-column: span 3;
+            }
+        }
+    }
+}
+
+.wrapper-amocrm {
+    background-image: url(/assets/image\ 31.png);
+    background-size: cover;
+    padding: 211px 166px 84px 114px;
+    .amocrm {
+        &__title {
+            background: $primary-color;
+            background-clip: text;
+            color: transparent;
+            font-size: 62px;
+            font-family: "bion-bold";
+            margin-bottom: 110px;
+            font-weight: 800;
+        }
+        .blocks {
+            display: flex;
+            flex-direction: row;
+            gap: 130px;
+            .button-text {
+                max-width: 413px;
+                width: 100%;
+                &__input {
+                    background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
+                    border: 1px solid #E5BD81;
+                    box-shadow: 0px 16px 50px -16px #E5AE5C99;
+                    color: white;
+                    padding: 25px 60px;
+                    font-size: 24px;
+                    border-radius: 35px;
+                    border: none;
+                    font-weight: bold;
+                    font-family: 'Raleway';
+                    text-transform: uppercase;
+                    margin-bottom: 90px;
+                    width: 100%;
+                }
+                &__line {
+                    font-family: 'Raleway';
+                    font-size: 13px;
+                }
+            }
+            .possibilities {
+                border: 1px solid #090909;
+                border-radius: 30px;
+                padding: 60px 30px 55px;
+                &__element {
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                    font-family: 'Raleway';
+                    color: #27313E;
+                    span {
+                        color: #C4C4C4;
+                        font-size: 36px;
+                        font-weight: bold;
+                        margin-right: 20px;
+                    }
+                }
             }
         }
     }
