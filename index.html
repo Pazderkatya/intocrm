@@ -181,8 +181,8 @@
                                 чтобы вы стали лидером в своей отрасли!</p>
                         </div>
                     </div>
-                    <div class="fouder-button activ">
-                        <button>Оставить заявку</button>
+                    <div class="fouder-button">
+                        <button call-form="modal-form">Оставить заявку</button>
                     </div>
                 </div>
             </section>
@@ -229,7 +229,7 @@
                                 <div class="wrapper-numbers"><span>04</span></div>
                                 <h3 class="reference__title">Виджеты</h3>
                                 <p class="reference__description">Комплексное внедрение под ваш бизнес, интеграция с внешними сервисами, обучение работников</p>
-                                <img class="background" src="/assets/Mask group (1).png" alt="Фон">
+                                <img src="/assets/Mask group (1).png" alt="Фон">
                             </a>
                         </div>
                     </div>
@@ -363,7 +363,7 @@
                         <div class="form-button">
                             <form id="form">
                                 <input class="form-button__line" type="tel" name="phone" placeholder="Ваш номер телефона">
-                                <input class="form-button__button activ" type="submit" value="Оставить заявку">
+                                <input class="form-button__button" type="submit" value="Оставить заявку">
                             </form>
                         </div>
                     </div>
@@ -380,8 +380,8 @@
                             <p> Наша команда готова уделять максимальное внимание вашим потребностям, предлагать наиболее оптимальные решения и строить отношения на взаимном доверии и долгосрочном партнерстве.
                             </p>
                         </div>
-                        <div class="benefit__button activ">
-                            <button>Оставить заявку</button>
+                        <div class="benefit__button">
+                            <button call-form="modal-form">Оставить заявку</button>
                         </div>
                     </div>
                     <div class="right__side">
@@ -656,21 +656,6 @@
                     </div>
                 </div>
             </section>
-            <section class="inquiry-bottom">
-                <div class="title-container">
-                    <h2 class="title-container__line">Остались вопросы?</h2>
-                </div>
-                <div class="inquiry">
-                    <form class="inquiry-form" id="form-inquiry">
-                        <div class="form-type">
-                            <p class="form-type__text">Отправьте свои контактные данные и наш специалист свяжется с вами в ближайшее время</p>
-                            <input type="text" name="name" id="name" placeholder="Ваше имя">
-                            <input type="tel" name="phone" id="phone" placeholder="Ваш номер телефона">
-                        </div>
-                        <input class="submit" type="submit" value="Отправить">
-                    </form>
-                </div>
-            </section>
             <section class="form-bottom">
                 <div class="form-left">
                     <div class="title-left">
@@ -736,7 +721,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal-form activ">
+        <div class="modal-form">
             <div class="blackout"></div>
             <section class="form-pop-up">
                 <div id="window">
@@ -753,8 +738,8 @@
                     </div>
                     <div class="left-side">
                         <form class="window-form">
-                            <input class="window-form__input" type="text" name="name" placeholder="Ваше имя">
-                            <input class="window-form__input" type="tel" name="phone" placeholder="Ваш номер телефона">
+                            <input class="window-form__name" type="text" name="name" placeholder="Ваше имя">
+                            <input class="window-form__phone" type="tel" name="phone" placeholder="Ваш номер телефона">
                             <div class="radio-elements">
                                 <div class="radio-elements__line">
                                     <input class="circle" type="radio" name="bisnes" id="WhatsApp" value="WhatsApp" checked="">
@@ -854,9 +839,8 @@
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/CustomEase.min.js"></script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous">
-</script>
+<script src="script.js"></script>
 
 </html>

@@ -175,3 +175,62 @@ $('#form-inquiry').on('submit', function(e) {
         }
     });
 })
+
+$('button[call-form="modal-form"]').on('click', function() {
+    $('.modal-form').addClass('active')
+})
+
+$('.blackout').on('click', function() {
+    $('.modal-form').removeClass('active')
+})
+
+
+
+$('.window-form').on('submit', function(e) {
+    e.preventDefault()
+    console.log($('.window-form__phone').val())
+    $.ajax({
+        url: 'https://intocrm24.bitrix24.ru/rest/992/ftdn3ezykg8s1fi3/crm.contact.add',
+        /* Куда пойдет запрос */
+        type: 'post',
+        /* Метод передачи (post или get) */
+        dataType: 'json',
+        contentType: "application/json; charset=utf-8",
+        /* Тип данных в ответе (xml, json, script, html). */
+        data: JSON.stringify({
+            "fields": {
+                "NAME": $('.window-form__name').val(),
+                "PHONE": [{ "VALUE": $('.window-form__phone').val(), "VALUE_TYPE": "WORK" }]
+            },
+            "params": {
+                "REGISTER_SONET_EVENT": "Y"
+            }
+        }),
+        /* Параметры передаваемые в запросе. */
+        success: function(data) {
+
+            $.ajax({
+                url: 'https://intocrm24.bitrix24.ru/rest/992/ftdn3ezykg8s1fi3/crm.deal.add',
+                type: 'post',
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify({
+                    "fields": {
+                        "CONTACT_ID": data['result'],
+                        "CATEGORY_ID": 36,
+                        "TITLE": "Заявка с сайта, форма: Остались вопросы?",
+                        "SOURCE_ID": "SITE",
+
+                    },
+                    "params": {
+                        "ASSIGNED_BY_ID": "Y",
+                    }
+                }),
+                success: function(data) {
+                    console.log(data);
+                }
+            });
+            console.log(data);
+        }
+    });
+})
