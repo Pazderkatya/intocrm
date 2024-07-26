@@ -5,9 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-main {
-  margin-top: 100px;
-}
 main.index {
   margin-top: 0px;
 }
@@ -430,7 +427,7 @@ section {
   margin-bottom: 100px;
 }
 .gray h2 {
-  text-align: center;
+  text-align: left;
   max-width: 826px;
   margin: 0 auto;
   position: relative;
@@ -1765,9 +1762,18 @@ footer {
 .wrapper-amocrm {
   background-image: url(/assets/image\ 31.png);
   background-size: cover;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+  position: relative;
+  margin-bottom: 200px;
+}
+
+.amocrm {
   padding: 211px 166px 84px 114px;
 }
-.wrapper-amocrm .amocrm__title {
+.amocrm__title {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
   -webkit-background-clip: text;
           background-clip: text;
@@ -1777,16 +1783,16 @@ footer {
   margin-bottom: 110px;
   font-weight: 800;
 }
-.wrapper-amocrm .amocrm .blocks {
+.amocrm .blocks {
   display: flex;
   flex-direction: row;
   gap: 130px;
 }
-.wrapper-amocrm .amocrm .blocks .button-text {
+.amocrm .blocks .button-text {
   max-width: 413px;
   width: 100%;
 }
-.wrapper-amocrm .amocrm .blocks .button-text__input {
+.amocrm .blocks .button-text__input {
   background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
   border: 1px solid #E5BD81;
   box-shadow: 0px 16px 50px -16px rgba(229, 174, 92, 0.6);
@@ -1801,24 +1807,113 @@ footer {
   margin-bottom: 90px;
   width: 100%;
 }
-.wrapper-amocrm .amocrm .blocks .button-text__line {
+.amocrm .blocks .button-text__line {
   font-family: "Raleway";
   font-size: 13px;
 }
-.wrapper-amocrm .amocrm .blocks .possibilities {
-  border: 1px solid #090909;
+.amocrm .blocks .possibilities {
+  border: 1px solid #fff;
   border-radius: 30px;
-  padding: 60px 30px 55px;
+  padding: 50px 30px 55px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1019607843);
+  box-shadow: -50px 4px 50px 0px rgba(255, 255, 255, 0.6901960784) inset;
 }
-.wrapper-amocrm .amocrm .blocks .possibilities__element {
+.amocrm .blocks .possibilities__element {
   margin-bottom: 20px;
   font-size: 20px;
   font-family: "Raleway";
   color: #27313E;
 }
-.wrapper-amocrm .amocrm .blocks .possibilities__element span {
+.amocrm .blocks .possibilities__element span {
   color: #C4C4C4;
   font-size: 36px;
   font-weight: bold;
   margin-right: 20px;
+}
+
+.gray-gradient {
+  border-radius: 30px;
+  padding-top: 400px;
+  position: relative;
+  background: linear-gradient(116.9deg, rgba(243, 248, 247, 0.65) 16.43%, rgba(234, 234, 241, 0.66) 98.81%), radial-gradient(60.81% 93.32% at 87% 0%, rgba(233, 227, 214, 0.345) 0%, rgba(229, 239, 247, 0) 100%);
+}
+
+.text-advantages__paragraph {
+  margin: 135px auto;
+  width: 100%;
+  max-width: 1114px;
+  padding: 147px 98px 139px 75px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1019607843);
+  box-shadow: -50px 4px 50px 0px rgba(255, 255, 255, 0.6901960784) inset;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  position: absolute;
+  top: -320px;
+  left: 110px;
+}
+.text-advantages__paragraph p {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Raleway";
+  font-weight: 600;
+}
+
+.form-manager {
+  margin-top: 130px;
+  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  border-radius: 30px;
+  position: relative;
+}
+.form-manager .elements {
+  padding: 52px 112px 114px 102px;
+  display: flex;
+  flex-direction: row;
+}
+.form-manager .elements .element-text {
+  color: #fff;
+  padding-top: 70px;
+}
+.form-manager .elements .element-text__title {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Raleway";
+  margin-bottom: 47px;
+}
+.form-manager .elements .element-text__title span {
+  font-size: 70px;
+  font-weight: 700;
+}
+.form-manager .elements .element-text__paragraph {
+  font-size: 19px;
+  font-weight: 500;
+  margin-right: 233px;
+}
+.form-manager .offer {
+  position: absolute;
+  bottom: -70px;
+  left: 41px;
+  max-width: 1286px;
+  background: rgba(255, 255, 255, 0.69);
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.form-manager .offer .wrapper-offer {
+  border-radius: 20px;
+  padding: 33px 55px;
+}
+.form-manager .offer .wrapper-offer__link h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form-manager .offer .wrapper-offer__link p {
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
