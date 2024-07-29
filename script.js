@@ -234,3 +234,12 @@ $('.window-form').on('submit', function(e) {
         }
     });
 })
+
+
+$('.wrapper-offer').on('click', function() {
+    $('.wrapper-offer').removeClass('active')
+    $('.elements').removeClass('active')
+    let element = $(this).attr('element')
+    $('div[element="' + element + '"]').addClass('active')
+
+})
