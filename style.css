@@ -1773,15 +1773,17 @@ footer {
 }
 .form-manager .wrapper-elements {
   position: relative;
+  height: 500px;
 }
 .form-manager .wrapper-elements .elements {
   position: absolute;
   padding: 52px 112px 114px 102px;
   display: flex;
   flex-direction: row;
+  opacity: 0;
 }
-.form-manager .wrapper-elements .elements .active {
-  display: block;
+.form-manager .wrapper-elements .elements.active {
+  opacity: 1 !important;
 }
 .form-manager .wrapper-elements .elements .element-text {
   color: #fff;
@@ -1823,7 +1825,7 @@ footer {
   max-width: 440px;
   width: 100%;
 }
-.offer .wrapper-offer .active {
+.offer .wrapper-offer.active {
   display: block;
   background-color: #fff;
 }

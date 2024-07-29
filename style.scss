@@ -1838,14 +1838,16 @@ footer {
     border-radius: 30px;
     .wrapper-elements {
         position: relative;
+        height: 500px;
         .elements {
             position: absolute;
-            .active {
-                display: block;
-            }
             padding: 52px 112px 114px 102px;
             display: flex;
             flex-direction: row;
+            opacity: 0;
+            &.active {
+                opacity: 1 !important;
+            }
             .element-text {
                 color: #fff;
                 padding-top: 70px;
@@ -1882,7 +1884,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     .wrapper-offer {
-        .active {
+        &.active {
             display: block;
             background-color: #fff;
         }
