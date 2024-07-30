@@ -1789,6 +1789,9 @@ footer {
 .form-manager .wrapper-elements .elements.active {
   opacity: 1 !important;
 }
+.form-manager .wrapper-elements .elements .element-picture {
+  padding-right: 50px;
+}
 .form-manager .wrapper-elements .elements .element-text {
   color: #fff;
   padding-top: 70px;
@@ -1807,7 +1810,7 @@ footer {
 .form-manager .wrapper-elements .elements .element-text__paragraph {
   font-size: 19px;
   font-weight: 500;
-  margin-right: 233px;
+  margin-right: 200px;
 }
 
 .offer {

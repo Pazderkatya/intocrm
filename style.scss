@@ -1852,6 +1852,9 @@ footer {
             &.active {
                 opacity: 1 !important;
             }
+            .element-picture {
+                padding-right: 50px;
+            }
             .element-text {
                 color: #fff;
                 padding-top: 70px;
@@ -1869,7 +1872,7 @@ footer {
                 &__paragraph {
                     font-size: 19px;
                     font-weight: 500;
-                    margin-right: 233px;
+                    margin-right: 200px;
                 }
             }
         }
