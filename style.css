@@ -1677,7 +1677,11 @@ footer {
 }
 
 .amocrm {
-  padding: 211px 166px 84px 114px;
+  margin: 0 auto;
+  padding-top: 166px;
+  padding-bottom: 84px;
+  width: 100%;
+  max-width: 1000px;
 }
 .amocrm__title {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
@@ -1774,10 +1778,10 @@ footer {
 .form-manager .wrapper-elements {
   position: relative;
   height: 500px;
+  padding: 52px 112px 114px 102px;
 }
 .form-manager .wrapper-elements .elements {
   position: absolute;
-  padding: 52px 112px 114px 102px;
   display: flex;
   flex-direction: row;
   opacity: 0;

@@ -1742,7 +1742,11 @@ footer {
 }
 
 .amocrm {
-    padding: 211px 166px 84px 114px;
+    margin: 0 auto;
+    padding-top: 166px;
+    padding-bottom: 84px;
+    width: 100%;
+    max-width: 1000px;
     &__title {
         background: $primary-color;
         background-clip: text;
@@ -1839,9 +1843,9 @@ footer {
     .wrapper-elements {
         position: relative;
         height: 500px;
+        padding: 52px 112px 114px 102px;
         .elements {
             position: absolute;
-            padding: 52px 112px 114px 102px;
             display: flex;
             flex-direction: row;
             opacity: 0;

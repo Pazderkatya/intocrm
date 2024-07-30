@@ -243,3 +243,5 @@ $('.wrapper-offer').on('click', function() {
     $('div[element="' + element + '"]').addClass('active')
 
 })
+
+$('div[element="offer_2"]').addClass('active')
