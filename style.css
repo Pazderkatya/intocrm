@@ -297,6 +297,9 @@ section {
 .services .big-wrapper .logo-text__icons {
   border-radius: 50px;
   border: 1px solid #C4C4C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 4px 11px;
 }
 .services .big-wrapper .logo-text p {
@@ -1081,11 +1084,14 @@ section {
   margin-bottom: 36px;
 }
 .form-bottom .form-left .title-left__form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50px;
   border: 1px solid #C4C4C4;
-  padding: 6px 15px;
+  padding: 4px 11px;
 }
-.form-bottom .form-left .title-left__form p {
+.form-bottom .form-left .title-left p {
   font-size: 23px;
   border: 1px solid #C4C4C4;
   border-radius: 50px;
@@ -1093,7 +1099,7 @@ section {
   padding: 7px 21px;
   color: #A6A6A6;
 }
-.form-bottom .form-left .form-left__calculator .calculator-services {
+.form-bottom .form-left__calculator .calculator-services {
   background: rgba(255, 255, 255, 0.69);
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -1107,26 +1113,26 @@ section {
   border-radius: 30px;
   padding: 31px 36px 38px 8px;
 }
-.form-bottom .form-left .form-left__calculator .calculator-services__element {
+.form-bottom .form-left__calculator .calculator-services__element {
   grid-column: span 3;
 }
-.form-bottom .form-left .form-left__calculator .calculator-services__element label {
+.form-bottom .form-left__calculator .calculator-services__element label {
   font-family: "Raleway";
   font-size: 16px;
 }
-.form-bottom .form-left .form-left__calculator .calculator-services__element .square {
+.form-bottom .form-left__calculator .calculator-services__element .square {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
-.form-bottom .form-left .form-left__calculator .calculator-services__element .square + label {
+.form-bottom .form-left__calculator .calculator-services__element .square + label {
   display: inline-flex;
   align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-.form-bottom .form-left .form-left__calculator .calculator-services__element .square + label::before {
+.form-bottom .form-left__calculator .calculator-services__element .square + label::before {
   content: "";
   display: inline-block;
   width: 24px;
@@ -1140,20 +1146,20 @@ section {
   background-position: center center;
   background-size: 50% 50%;
 }
-.form-bottom .form-left .form-left__calculator .calculator-services__element .square:not(:disabled):active + label::before {
+.form-bottom .form-left__calculator .calculator-services__element .square:not(:disabled):active + label::before {
   background-color: #E5BD81;
   height: 16px;
   width: 16px;
   border-radius: 8px;
   border-color: #E5BD81;
 }
-.form-bottom .form-left .form-left__calculator .calculator-services__element .square:not(:disabled):not(:checked) + label:hover::before {
+.form-bottom .form-left__calculator .calculator-services__element .square:not(:disabled):not(:checked) + label:hover::before {
   border-color: #E5BD81;
 }
-.form-bottom .form-left .form-left__calculator .calculator-services__element .square:focus + label::before {
+.form-bottom .form-left__calculator .calculator-services__element .square:focus + label::before {
   box-shadow: 0px 16px 50px -16px rgba(229, 174, 92, 0.6);
 }
-.form-bottom .form-left .form-left__calculator input {
+.form-bottom .form-left__calculator input {
   font-family: "Raleway";
   font-size: 20px;
   text-transform: uppercase;
@@ -1166,30 +1172,31 @@ section {
   color: #fff;
   font-weight: 600;
 }
-.form-bottom .form-right {
+
+.form-right {
   background: linear-gradient(116.9deg, rgba(243, 248, 247, 0.65) 16.43%, rgba(234, 234, 241, 0.66) 98.81%), radial-gradient(60.81% 93.32% at 87% 0%, rgba(233, 227, 214, 0.345) 0%, rgba(229, 239, 247, 0) 100%);
   max-width: 433px;
   max-height: 509px;
   border-radius: 30px;
   padding: 30px;
 }
-.form-bottom .form-right__blue {
+.form-right__blue {
   border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
 }
-.form-bottom .form-right__title {
+.form-right__title {
   font-size: 28px;
   text-align: center;
 }
-.form-bottom .form-right__paragraph {
+.form-right__paragraph {
   color: #fff;
   text-align: center;
   margin-bottom: 15px;
 }
-.form-bottom .form-right input {
+.form-right input {
   border: 1px solid rgb(149, 150, 150);
   height: 40px;
   border-radius: 10px;
