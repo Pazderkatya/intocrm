@@ -309,6 +309,9 @@ section {
   font-family: "Bion-Bold";
   padding: 8px 20px;
   color: #A6A6A6;
+  background: linear-gradient(45deg, #c4c4c4 33%, #a7a9ab 66%, #f2f3f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .services .big-wrapper .specification {
   justify-content: space-between;
@@ -1688,7 +1691,7 @@ footer {
   padding-top: 166px;
   padding-bottom: 84px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 .amocrm__title {
   background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
@@ -1768,7 +1771,7 @@ footer {
   border-radius: 30px;
   position: absolute;
   top: -320px;
-  left: 110px;
+  left: 115px;
 }
 .text-advantages__paragraph p {
   text-align: center;
