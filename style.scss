@@ -809,6 +809,7 @@ section {
                 backdrop-filter: blur(60px);
                 border-radius: 30px;
                 padding: 20px;
+                box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1019607843);
                 .company {
                     gap: 10px;
                     .text {
@@ -1748,7 +1749,7 @@ footer {
     margin: 0 auto;
     padding: 0 30px;
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
 }
 
 .amocrm {
@@ -1862,7 +1863,8 @@ footer {
                 opacity: 1 !important;
             }
             .element-picture {
-                padding-right: 100px;
+                margin-right: 100px;
+                transform: scale(-1, 1);
             }
             .element-text {
                 color: #fff;
@@ -1903,6 +1905,7 @@ footer {
         &.active {
             display: block;
             background-color: #fff;
+            border-radius: 12px;
         }
         .triangle {
             &.active {
