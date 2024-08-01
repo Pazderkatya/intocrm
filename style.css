@@ -1847,6 +1847,17 @@ footer {
   display: block;
   background-color: #fff;
 }
+.offer .wrapper-offer .triangle.active {
+  position: absolute;
+}
+.offer .wrapper-offer .triangle::after.active {
+  content: "";
+  position: absolute;
+  left: 150px;
+  bottom: 30px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
 .offer .wrapper-offer h3 {
   font-size: 25px;
   font-weight: 700;
@@ -1949,4 +1960,31 @@ footer {
   padding: 15px 120px;
   font-size: 24px;
   font-weight: bold;
+}
+
+.contakts {
+  background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+  border-radius: 30px;
+}
+.contakts__title {
+  padding-top: 200px;
+}
+.contakts__title h1 {
+  color: #fff;
+  font-size: 62px;
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+.contakts__element {
+  color: #fff;
+  padding: 10px 50px;
+}
+.contakts__element .element {
+  text-align: left;
+}
+.contakts__element .element h2 {
+  color: #fff;
+}
+.contakts__element .element:nth-of-type(2) {
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */

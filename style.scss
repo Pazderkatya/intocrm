@@ -1906,6 +1906,21 @@ footer {
             display: block;
             background-color: #fff;
         }
+        .triangle {
+            &.active {
+                position: absolute;
+            }
+        }
+        .triangle::after {
+            &.active {
+                content: '';
+                position: absolute;
+                left: 150px;
+                bottom: 30px;
+                border: 10px solid transparent;
+                border-bottom: 10px solid #fff;
+            }
+        }
         border-radius: 20px;
         padding: 32px 40px;
         max-width: 440px;
@@ -2017,6 +2032,33 @@ footer {
                     }
                 }
             }
+        }
+    }
+}
+
+.contakts {
+    background: linear-gradient(57.53deg, rgb(25, 39, 56), rgb(36, 88, 142));
+    border-radius: 30px;
+    &__title {
+        padding-top: 200px;
+        h1 {
+            color: #fff;
+            font-size: 62px;
+            font-weight: 700;
+            margin-bottom: 100px;
+        }
+    }
+    &__element {
+        color: #fff;
+        padding: 10px 50px;
+        .element {
+            text-align: left;
+            h2 {
+                color: #fff;
+            }
+        }
+        .element:nth-of-type(2) {
+            text-align: right;
         }
     }
 }
