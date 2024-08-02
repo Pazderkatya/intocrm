@@ -242,7 +242,6 @@ $('.wrapper-offer').on('click', function() {
     let element = $(this).attr('element')
     $('div[element="' + element + '"]').addClass('active')
 
-
 })
 
 $('div[element="offer_2"]').addClass('active')

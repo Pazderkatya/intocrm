@@ -904,11 +904,12 @@ section {
             display: flex;
             gap: 20px;
             button {
+                width: 260px;
                 border-radius: 18px;
                 border: rgb(149, 150, 150) solid 3px;
                 background: none;
-                padding: 8px 64px;
-                font-size: 20px;
+                padding: 8px 50px;
+                font-size: 18px;
             }
             button:hover {
                 opacity: 0.5;
@@ -920,10 +921,11 @@ section {
                 border: 1px solid #E5BD81;
                 box-shadow: 0px 16px 50px -16px #E5AE5C99;
                 color: white;
-                padding: 8px 64px;
-                font-size: 20px;
+                padding: 8px 50px;
+                font-size: 18px;
                 border-radius: 18px;
                 border: none;
+                width: 260px;
             }
             button:hover {
                 opacity: 0.5;
@@ -1857,7 +1859,7 @@ footer {
         width: 100%;
         max-width: 1114px;
         padding: 147px 98px 139px 75px;
-        background: #FFFFFF33;
+        background: #FFFFFF;
         box-shadow: 0px 4px 25.8px 0px #0000001A;
         border: 1px solid #fff;
         border-radius: 30px;
@@ -1893,7 +1895,7 @@ footer {
             .element-picture {
                 margin-right: 100px;
                 transform: scale(-1, 1);
-                margin-top: 100px;
+                margin-top: 60px;
             }
             .element-text {
                 color: #fff;
@@ -1941,16 +1943,9 @@ footer {
             background-color: #fff;
             border-radius: 12px;
             transform: scale(1.05);
-        }
-        .triangle {
-            &.active {
-                position: absolute;
-            }
-        }
-        .triangle::after {
-            &.active {
+            &::after {
                 content: '';
-                position: absolute;
+                position: relative;
                 left: 150px;
                 bottom: 30px;
                 border: 10px solid transparent;
