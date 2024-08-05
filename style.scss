@@ -70,7 +70,7 @@ h2 {
 }
 
 .br-30 {
-    border-radius: 30px;
+    border-radius: 0 0 30px 30px;
 }
 
 body {
@@ -856,7 +856,8 @@ section {
                             }
                         }
                         .raiting {
-                            margin-left: 100px;
+                            position: absolute;
+                            right: 0;
                         }
                     }
                     .basic-text {
@@ -903,7 +904,7 @@ section {
         &-block {
             display: flex;
             gap: 20px;
-            button {
+            a {
                 width: 260px;
                 border-radius: 18px;
                 border: rgb(149, 150, 150) solid 3px;
@@ -911,12 +912,14 @@ section {
                 padding: 8px 50px;
                 font-size: 18px;
             }
-            button:hover {
+            a:hover {
                 opacity: 0.5;
             }
         }
         &-block_gradient {
-            button {
+            a {
+                width: 260px;
+                height: 40px;
                 background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
                 border: 1px solid #E5BD81;
                 box-shadow: 0px 16px 50px -16px #E5AE5C99;
@@ -925,9 +928,8 @@ section {
                 font-size: 18px;
                 border-radius: 18px;
                 border: none;
-                width: 260px;
             }
-            button:hover {
+            a:hover {
                 opacity: 0.5;
             }
         }
@@ -1075,7 +1077,6 @@ section {
         text-align: center;
     }
     &__description {
-        max-width: 830px;
         width: 100%;
         text-align: center;
         font-family: 'Raleway';
@@ -1772,7 +1773,7 @@ footer {
 }
 
 .wrapper-amocrm {
-    background-image: url(assets/image\ 31.png);
+    background-image: url(assets/gray-background.png);
     background-size: cover;
     width: 100%;
     max-width: 1440px;
@@ -1906,10 +1907,6 @@ footer {
                     font-weight: 600;
                     font-family: 'Raleway';
                     margin-bottom: 47px;
-                    span {
-                        font-size: 70px;
-                        font-weight: 700;
-                    }
                 }
                 &__paragraph {
                     font-size: 19px;
@@ -1943,11 +1940,12 @@ footer {
             background-color: #fff;
             border-radius: 12px;
             transform: scale(1.05);
+            box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1019607843);
             &::after {
                 content: '';
-                position: relative;
-                left: 150px;
-                bottom: 30px;
+                position: absolute;
+                left: calc(50% - 10px);
+                top: -18px;
                 border: 10px solid transparent;
                 border-bottom: 10px solid #fff;
             }
@@ -1982,11 +1980,19 @@ footer {
         display: block;
     }
     .blackout {
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.4);
-        width: 100vw;
-        height: 100vh;
-        z-index: -1;
+        .closeModal {
+            position: absolute;
+            top: 30px;
+            right: 20px;
+            width: 24px;
+            height: 24px;
+            opacity: 0.2;
+            cursor: pointer;
+            transition: opacity ease 0.5s;
+            &:hover {
+                opacity: 1;
+            }
+        }
         .form-pop-up {
             margin: 100px auto;
             #window {

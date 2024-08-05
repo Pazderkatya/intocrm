@@ -43,7 +43,7 @@ h2 {
 }
 
 .br-30 {
-  border-radius: 30px;
+  border-radius: 0 0 30px 30px;
 }
 
 body {
@@ -815,7 +815,8 @@ section {
   margin: 0;
 }
 .review .review-inner .swiper-wrapper .swiper-slider .company .text .raiting {
-  margin-left: 100px;
+  position: absolute;
+  right: 0;
 }
 .review .review-inner .swiper-wrapper .swiper-slider .company .basic-text {
   background: linear-gradient(130.29deg, rgba(255, 255, 255, 0.1) 8.67%, rgba(255, 255, 255, 0.8) 35.79%, rgba(255, 255, 255, 0.5) 55.39%, #ffffff 78.82%);
@@ -857,7 +858,7 @@ section {
   display: flex;
   gap: 20px;
 }
-.blog .button-block button {
+.blog .button-block a {
   width: 260px;
   border-radius: 18px;
   border: rgb(149, 150, 150) solid 3px;
@@ -865,10 +866,12 @@ section {
   padding: 8px 50px;
   font-size: 18px;
 }
-.blog .button-block button:hover {
+.blog .button-block a:hover {
   opacity: 0.5;
 }
-.blog .button-block_gradient button {
+.blog .button-block_gradient a {
+  width: 260px;
+  height: 40px;
   background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
   border: 1px solid #E5BD81;
   box-shadow: 0px 16px 50px -16px rgba(229, 174, 92, 0.6);
@@ -877,9 +880,8 @@ section {
   font-size: 18px;
   border-radius: 18px;
   border: none;
-  width: 260px;
 }
-.blog .button-block_gradient button:hover {
+.blog .button-block_gradient a:hover {
   opacity: 0.5;
 }
 .blog .card-wrapper {
@@ -1022,7 +1024,6 @@ section {
   text-align: center;
 }
 .case__description {
-  max-width: 830px;
   width: 100%;
   text-align: center;
   font-family: "Raleway";
@@ -1707,7 +1708,7 @@ footer {
 }
 
 .wrapper-amocrm {
-  background-image: url(assets/image\ 31.png);
+  background-image: url(assets/gray-background.png);
   background-size: cover;
   width: 100%;
   max-width: 1440px;
@@ -1845,10 +1846,6 @@ footer {
   font-family: "Raleway";
   margin-bottom: 47px;
 }
-.form-manager .wrapper-elements .elements .element-text__title span {
-  font-size: 70px;
-  font-weight: 700;
-}
 .form-manager .wrapper-elements .elements .element-text__paragraph {
   font-size: 19px;
   font-weight: 500;
@@ -1884,12 +1881,13 @@ footer {
   background-color: #fff;
   border-radius: 12px;
   transform: scale(1.05);
+  box-shadow: 0px 4px 25.8px 0px rgba(0, 0, 0, 0.1019607843);
 }
 .offer .wrapper-offer.active::after {
   content: "";
-  position: relative;
-  left: 150px;
-  bottom: 30px;
+  position: absolute;
+  left: calc(50% - 10px);
+  top: -18px;
   border: 10px solid transparent;
   border-bottom: 10px solid #fff;
 }
@@ -1917,12 +1915,18 @@ footer {
 .modal-form .active {
   display: block;
 }
-.modal-form .blackout {
+.modal-form .blackout .closeModal {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
+  top: 30px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  opacity: 0.2;
+  cursor: pointer;
+  transition: opacity ease 0.5s;
+}
+.modal-form .blackout .closeModal:hover {
+  opacity: 1;
 }
 .modal-form .blackout .form-pop-up {
   margin: 100px auto;
