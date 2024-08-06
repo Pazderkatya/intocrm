@@ -902,15 +902,20 @@ section {
     }
     .button {
         &-block {
-            display: flex;
-            gap: 20px;
             a {
+                display: inline-block;
+                font-family: 'Raleway';
                 width: 260px;
+                height: 40px;
                 border-radius: 18px;
                 border: rgb(149, 150, 150) solid 3px;
                 background: none;
                 padding: 8px 50px;
                 font-size: 18px;
+                text-align: center;
+            }
+            a:not(:last-child) {
+                margin-right: 20px;
             }
             a:hover {
                 opacity: 0.5;
@@ -918,16 +923,19 @@ section {
         }
         &-block_gradient {
             a {
+                display: inline-block;
+                font-family: 'Raleway';
                 width: 260px;
                 height: 40px;
                 background: linear-gradient(180deg, #E5AE5C 0%, #E5BD81 100%), radial-gradient(50.83% 457.5% at 27.25% 164%, rgba(203, 138, 41, 0) 0%, #CB8A29 100%), radial-gradient(141.2% 158.56% at 67% -42.5%, #CBA629 0%, rgba(203, 166, 41, 0) 100%);
                 border: 1px solid #E5BD81;
                 box-shadow: 0px 16px 50px -16px #E5AE5C99;
                 color: white;
-                padding: 8px 50px;
+                padding: 10px 50px;
                 font-size: 18px;
                 border-radius: 18px;
                 border: none;
+                text-align: center;
             }
             a:hover {
                 opacity: 0.5;
@@ -1909,6 +1917,7 @@ footer {
                     margin-bottom: 47px;
                 }
                 &__paragraph {
+                    font-family: 'Raleway';
                     font-size: 19px;
                     font-weight: 500;
                     margin-right: 200px;
