@@ -2108,3 +2108,16 @@ footer {
         }
     }
 }
+
+.office {
+    .photoboard {
+        .city:first-child {
+            text-align: right;
+        }
+        .city {
+            &__text {
+                font-size: 24px;
+            }
+        }
+    }
+}
