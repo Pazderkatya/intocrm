@@ -1985,19 +1985,16 @@ footer {
     width: 100vw;
     display: none;
     z-index: 99999;
-    .active {
-        display: block;
-    }
     .blackout {
+        background-color: rgba(0, 0, 0, 0.4);
         .closeModal {
             position: absolute;
-            top: 30px;
-            right: 20px;
-            width: 24px;
-            height: 24px;
+            top: 40px;
+            right: 30px;
+            width: 30px;
+            height: 30px;
             opacity: 0.2;
             cursor: pointer;
-            transition: opacity ease 0.5s;
             &:hover {
                 opacity: 1;
             }

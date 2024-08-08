@@ -1919,21 +1919,36 @@ footer {
   display: none;
   z-index: 99999;
 }
-.modal-form .active {
-  display: block;
+.modal-form .blackout {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .modal-form .blackout .closeModal {
   position: absolute;
-  top: 30px;
-  right: 20px;
-  width: 24px;
-  height: 24px;
+  top: 40px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
   opacity: 0.2;
   cursor: pointer;
-  transition: opacity ease 0.5s;
 }
 .modal-form .blackout .closeModal:hover {
   opacity: 1;
+}
+.modal-form .blackout .closeModal .closeModal::before,
+.modal-form .blackout .closeModal .closeModal::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #000;
+}
+.modal-form .blackout .closeModal .closeModal::before {
+  transform: rotate(45deg);
+}
+.modal-form .blackout .closeModal .closeModal::after {
+  transform: rotate(-45deg);
 }
 .modal-form .blackout .form-pop-up {
   margin: 100px auto;
